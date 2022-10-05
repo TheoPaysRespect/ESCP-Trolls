@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>MorrowRim</li>
+		</mods> 
+				
+		<match Class="PatchOperationSequence">
+			<operations>
+			
+				<!-- MorrowRim_Ashlands -->
+			
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/BiomeDef[defName="MorrowRim_Ashlands"]/wildAnimals</xpath>
+					<value>
+						<MorrowRim_TrollFungal>0.15</MorrowRim_TrollFungal>
+						<MorrowRim_TrollBarren>0.1</MorrowRim_TrollBarren>
+						<MorrowRim_TrollHill>0.05</MorrowRim_TrollHill>
+						<MorrowRim_TrollUdyrfrykte>0.02</MorrowRim_TrollUdyrfrykte>
+						<VAECaves_MorrowRim_TrollCave MayRequire="VanillaExpanded.VAECaves">0.05</VAECaves_MorrowRim_TrollCave>
+					</value>			
+				</li>
+
+			</operations>
+		</match>
+	</Operation>
+	
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>MorrowRim - Ashlands Swamp</li>
+		</mods> 
+				
+		<match Class="PatchOperationSequence">
+			<operations>
+			
+				<!-- MorrowRim_AshSwamp -->
+			
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/BiomeDef[defName="MorrowRim_AshSwamp"]/wildAnimals</xpath>
+					<value>
+						<MorrowRim_TrollFungal>0.15</MorrowRim_TrollFungal>
+						<MorrowRim_TrollSwamp>0.1</MorrowRim_TrollSwamp>
+						<MorrowRim_TrollRiver>0.05</MorrowRim_TrollRiver>
+						<MorrowRim_TrollUdyrfrykte>0.02</MorrowRim_TrollUdyrfrykte>
+						<VAECaves_MorrowRim_TrollCave MayRequire="VanillaExpanded.VAECaves">0.05</VAECaves_MorrowRim_TrollCave>
+					</value>			
+				</li>
+
+			</operations>
+		</match>
+	</Operation>
+	
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>MorrowRim - Volcanic Ashlands</li>
+		</mods> 
+				
+		<match Class="PatchOperationSequence">
+			<operations>
+			
+				<!-- MorrowRim_VolcanicAshlands -->
+			
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/BiomeDef[defName="MorrowRim_VolcanicAshlands"]/wildAnimals</xpath>
+					<value>
+						<MorrowRim_TrollFungal>0.1</MorrowRim_TrollFungal>
+						<MorrowRim_TrollHill>0.05</MorrowRim_TrollHill>
+						<MorrowRim_TrollUdyrfrykte>0.02</MorrowRim_TrollUdyrfrykte>
+						<VAECaves_MorrowRim_TrollCave MayRequire="VanillaExpanded.VAECaves">0.05</VAECaves_MorrowRim_TrollCave>
+					</value>			
+				</li>
+
+			</operations>
+		</match>
+	</Operation>
+	
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>MorrowRim - Grazelands</li>
+		</mods> 
+				
+		<match Class="PatchOperationSequence">
+			<operations>
+			
+				<!-- MorrowRim_Grazelands -->
+			
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/BiomeDef[defName="MorrowRim_Grazelands"]/wildAnimals</xpath>
+					<value>
+						<MorrowRim_TrollFungal>0.15</MorrowRim_TrollFungal>
+						<MorrowRim_TrollBarren>0.1</MorrowRim_TrollBarren>
+						<MorrowRim_TrollPygmy>0.05</MorrowRim_TrollPygmy>
+						<MorrowRim_TrollHill>0.05</MorrowRim_TrollHill>
+						<MorrowRim_TrollUdyrfrykte>0.02</MorrowRim_TrollUdyrfrykte>
+						<VAECaves_MorrowRim_TrollCave MayRequire="VanillaExpanded.VAECaves">0.05</VAECaves_MorrowRim_TrollCave>
+					</value>			
+				</li>
+
+			</operations>
+		</match>
+	</Operation>
+	
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>MorrowRim - Glaciated Ashlands</li>
+		</mods> 
+				
+		<match Class="PatchOperationSequence">
+			<operations>
+			
+				<!-- MorrowRim_Ashlands -->
+			
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/BiomeDef[defName="MorrowRim_GlaciatedAshlands"]/wildAnimals</xpath>
+					<value>
+						<MorrowRim_TrollFungal>0.15</MorrowRim_TrollFungal>
+						<MorrowRim_TrollFrost>0.1</MorrowRim_TrollFrost>
+						<MorrowRim_TrollHill>0.05</MorrowRim_TrollHill>
+						<MorrowRim_TrollGrahl>0.02</MorrowRim_TrollGrahl>
+						<MorrowRim_TrollGehenoth>0.02</MorrowRim_TrollGehenoth>
+						<MorrowRim_TrollUdyrfrykte>0.02</MorrowRim_TrollUdyrfrykte>
+						<VAECaves_MorrowRim_TrollCave MayRequire="VanillaExpanded.VAECaves">0.05</VAECaves_MorrowRim_TrollCave>
+					</value>			
+				</li>
+
+			</operations>
+		</match>
+	</Operation>
+		
+</Patch>
+

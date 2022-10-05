@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	<!-- ==========[Base]========== -->
+	<AchievementsExpanded.AchievementDef Name="ESCP_AchievementTrolls_Base" Abstract="True">
+		<bgtexPath>Achievements/ESCP_AchievementBackground</bgtexPath>
+		<tab>ESCP_AchievementsTab</tab>
+	</AchievementsExpanded.AchievementDef>
+	<!-- ==========[Collecting]========== -->
+	<AchievementsExpanded.AchievementDef ParentName="ESCP_AchievementTrolls_Base">
+		<defName>ESCP_AchievementTrolls_TrollBlood</defName>
+		<label>Troll Vampire</label>
+		<description>Obtain 100 bottles of troll blood</description>
+		<tracker Class="AchievementsExpanded.ItemTracker">
+			<def>ESCP_TrollBlood</def>
+			<count>100</count>
+		</tracker>
+		<texPath>Achievements/ESCP_AchievementTrolls_TrollBlood</texPath>
+		<points>15</points>
+	</AchievementsExpanded.AchievementDef>
+	<!-- ==========[Taming]========== -->
+	<AchievementsExpanded.AchievementDef ParentName="ESCP_AchievementTrolls_Base">
+		<defName>ESCP_AchievementTrolls_Tamer</defName>
+		<label>Troll Tamer</label>
+		<description>Tame your first troll of any kind, excluding strange kinds</description>
+		<tracker Class="AchievementsExpanded.KindDefTracker">
+			<requireAll>false</requireAll>
+			<kindDefs>
+				<li>
+					<key>ESCP_TrollBarren</key>
+					<value>1</value>
+				</li>
+				<li>
+					<key>ESCP_TrollForest</key>
+					<value>1</value>
+				</li>
+				<li>
+					<key>ESCP_TrollPygmy</key>
+					<value>1</value>
+				</li>
+				<li>
+					<key>ESCP_TrollSwamp</key>
+					<value>1</value>
+				</li>
+				<li>
+					<key>ESCP_TrollFrost</key>
+					<value>1</value>
+				</li>
+				<li>
+					<key>ESCP_TrollHill</key>
+					<value>1</value>
+				</li>
+				<li>
+					<key>ESCP_TrollRiver</key>
+					<value>1</value>
+				</li>
+				<li>
+					<key>ESCP_TrollCave</key>
+					<value>1</value>
+				</li>
+				<li>
+					<key>ESCP_TrollGrahl</key>
+					<value>1</value>
+				</li>
+				<li>
+					<key>ESCP_TrollUdyrfrykte</key>
+					<value>1</value>
+				</li>
+			</kindDefs>
+		</tracker>
+		<texPath>Achievements/ESCP_AchievementTrolls_Tamer</texPath>
+		<points>10</points>
+	</AchievementsExpanded.AchievementDef>
+	<AchievementsExpanded.AchievementDef ParentName="ESCP_AchievementTrolls_Base">
+		<defName>ESCP_AchievementTrolls_TamerStrange</defName>
+		<label>Strange Troll</label>
+		<description>Tame your first strange troll of any kind</description>
+		<tracker Class="AchievementsExpanded.KindDefTracker">
+			<requireAll>false</requireAll>
+			<kindDefs>
+				<li>
+					<key>ESCP_TrollFungal</key>
+					<value>1</value>
+				</li>
+				<li>
+					<key>ESCP_TrollBoom</key>
+					<value>1</value>
+				</li>
+				<li>
+					<key>ESCP_TrollAnima</key>
+					<value>1</value>
+				</li>
+			</kindDefs>
+		</tracker>
+		<texPath>Achievements/ESCP_AchievementTrolls_TamerStrange</texPath>
+		<points>10</points>
+	</AchievementsExpanded.AchievementDef>
+	<AchievementsExpanded.AchievementDef ParentName="ESCP_AchievementTrolls_Base">
+		<defName>ESCP_AchievementTrolls_Collector</defName>
+		<label>Troll Collector</label>
+		<description>Have at least one of each species of normal troll at the same tame</description>
+		<tracker Class="AchievementsExpanded.KindDefTracker">
+			<kindDefs>
+				<li>
+					<key>ESCP_TrollBarren</key>
+					<value>1</value>
+				</li>
+				<li>
+					<key>ESCP_TrollForest</key>
+					<value>1</value>
+				</li>
+				<li>
+					<key>ESCP_TrollPygmy</key>
+					<value>1</value>
+				</li>
+				<li>
+					<key>ESCP_TrollSwamp</key>
+					<value>1</value>
+				</li>
+				<li>
+					<key>ESCP_TrollFrost</key>
+					<value>1</value>
+				</li>
+				<li>
+					<key>ESCP_TrollHill</key>
+					<value>1</value>
+				</li>
+				<li>
+					<key>ESCP_TrollRiver</key>
+					<value>1</value>
+				</li>
+				<li>
+					<key>ESCP_TrollCave</key>
+					<value>1</value>
+				</li>
+				<li>
+					<key>ESCP_TrollGrahl</key>
+					<value>1</value>
+				</li>
+				<li>
+					<key>ESCP_TrollUdyrfrykte</key>
+					<value>1</value>
+				</li>
+			</kindDefs>
+		</tracker>
+		<texPath>Achievements/ESCP_AchievementTrolls_Collector</texPath>
+		<points>50</points>
+	</AchievementsExpanded.AchievementDef>
+	<!-- ==========[Quests]========== -->
+	<!-- ==========[Killing]========== -->
+	<AchievementsExpanded.AchievementDef ParentName="ESCP_AchievementTrolls_Base">
+		<defName>ESCP_AchievementTrolls_UdyrfrykteHunter</defName>
+		<label>The new Chieftain of Thirsk</label>
+		<description>Successfully hunt 15 Udyrfrykte</description>
+		<tracker Class="AchievementsExpanded.KillTracker">
+			<raceDef>ESCP_TrollUdyrfrykte</raceDef>
+			<count>15</count>
+		</tracker>
+		<texPath>Achievements/ESCP_AchievementTrolls_UdyrfrykteHunter</texPath>
+		<points>50</points>
+	</AchievementsExpanded.AchievementDef>
+	<AchievementsExpanded.AchievementDef ParentName="ESCP_AchievementTrolls_Base">
+		<defName>ESCP_AchievementTrolls_GrahlHunter</defName>
+		<label>Hero of the Skaal</label>
+		<description>Successfully hunt 15 Grahl</description>
+		<tracker Class="AchievementsExpanded.KillTracker">
+			<raceDef>ESCP_TrollGrahl</raceDef>
+			<count>15</count>
+		</tracker>
+		<texPath>Achievements/ESCP_AchievementTrolls_GrahlHunter</texPath>
+		<points>50</points>
+	</AchievementsExpanded.AchievementDef>
+	<!--
+	<AchievementsExpanded.AchievementDef ParentName="ESCP_AchievementTrolls_Base">
+		<defName>ESCP_AchievementTrolls_PrimalGrahlHunter</defName>
+		<label>Slayer of the Lightkeeper</label>
+		<description>Successfully hunt a Primal Grahl</description>
+		<tracker Class="AchievementsExpanded.KillTracker">
+			<raceDef>ESCP_TrollGrahlPrimal</raceDef>
+			<count>1</count>
+		</tracker>
+		<texPath>Achievements/ESCP_AchievementTrolls_PrimalGrahlHunter</texPath>
+		<points>25</points>
+	</AchievementsExpanded.AchievementDef>
+	-->
+</Defs>

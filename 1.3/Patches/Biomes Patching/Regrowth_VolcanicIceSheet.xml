@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>[HLX] ReGrowth - Volcanic Ice Sheet - Beta</li>
+			<li>[HLX] ReGrowth - Volcanic Ice Sheet</li>
+			<li>ReGrowth - Volcanic Ice Sheet</li>
+			<li>ReGrowth: Volcanic Ice Sheet</li>
+		</mods> 
+				
+		<match Class="PatchOperationSequence">
+			<operations>
+			
+				<!-- RG-VIS_VulcanicIceSheet -->
+			
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/BiomeDef[defName="RG-VIS_VulcanicIceSheet"]/wildAnimals</xpath>
+					<value>
+						<MorrowRim_TrollFrost>0.03</MorrowRim_TrollFrost>
+						<MorrowRim_TrollUdyrfrykte>0.005</MorrowRim_TrollUdyrfrykte>
+						<MorrowRim_TrollGehenoth>0.01</MorrowRim_TrollGehenoth>
+						<VAECaves_MorrowRim_TrollCave MayRequire="VanillaExpanded.VAECaves">0.05</VAECaves_MorrowRim_TrollCave>
+					</value>			
+				</li>
+
+			</operations>
+		</match>
+	</Operation>
+
+</Patch>
+

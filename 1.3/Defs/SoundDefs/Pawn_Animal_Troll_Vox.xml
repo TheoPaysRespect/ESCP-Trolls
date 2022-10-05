@@ -1,0 +1,78 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	<!-- All sounds form http://soundbible.com/ by Mike Koenig -->
+	<SoundDef>
+		<defName>ESCP_Pawn_Troll_Call</defName>
+		<context>MapOnly</context>
+		<subSounds>
+			<li>
+				<grains>
+					<li Class="AudioGrain_Folder">
+						<!-- Bull - SoundBible.com-1252561191 -->
+						<clipFolderPath>Pawn/Animal/ESCP_Troll/Troll_Calls</clipFolderPath>
+					</li>
+				</grains>
+				<volumeRange>35.42672~34.7734</volumeRange>
+				<pitchRange>0.9770588~1.137647</pitchRange>
+				<distRange>0~50.40025</distRange>
+				<sustainLoop>False</sustainLoop>
+			</li>
+		</subSounds>
+	</SoundDef>
+	<SoundDef>
+		<defName>ESCP_Pawn_Troll_Angry</defName>
+		<context>MapOnly</context>
+		<maxVoices>2</maxVoices>
+		<subSounds>
+			<li>
+				<grains>
+					<li Class="AudioGrain_Folder">
+						<!-- Large Angry Dog - SoundBible.com-1015886858 -->
+						<clipFolderPath>Pawn/Animal/ESCP_Troll/Troll_Angry</clipFolderPath>
+					</li>
+				</grains>
+				<volumeRange>25~25</volumeRange>
+				<pitchRange>0.9541176~1.137647</pitchRange>
+				<distRange>0~70</distRange>
+				<sustainLoop>False</sustainLoop>
+			</li>
+		</subSounds>
+	</SoundDef>
+	<SoundDef>
+		<defName>ESCP_Pawn_Troll_Wounded</defName>
+		<context>MapOnly</context>
+		<subSounds>
+			<li>
+				<grains>
+					<li Class="AudioGrain_Folder">
+						<!-- Bull - SoundBible.com-1252561191 -->
+						<clipFolderPath>Pawn/Animal/ESCP_Troll/Troll_Angry</clipFolderPath>
+					</li>
+				</grains>
+				<volumeRange>15~15</volumeRange>
+				<pitchRange>0.9311765~1.091765</pitchRange>
+				<distRange>0~70</distRange>
+				<repeatMode>NeverTwice</repeatMode>
+				<sustainLoop>False</sustainLoop>
+			</li>
+		</subSounds>
+	</SoundDef>
+	<SoundDef>
+		<defName>ESCP_Pawn_Troll_Death</defName>
+		<context>MapOnly</context>
+		<subSounds>
+			<li>
+				<grains>
+					<li Class="AudioGrain_Folder">
+						<!-- Lion - SoundBible.com-621763115 -->
+						<clipFolderPath>Pawn/Animal/ESCP_Troll/Troll_Death</clipFolderPath>
+					</li>
+				</grains>
+				<volumeRange>20~20</volumeRange>
+				<pitchRange>0.9311764~1.068824</pitchRange>
+				<distRange>0~70</distRange>
+				<sustainLoop>False</sustainLoop>
+			</li>
+		</subSounds>
+	</SoundDef>
+</Defs>

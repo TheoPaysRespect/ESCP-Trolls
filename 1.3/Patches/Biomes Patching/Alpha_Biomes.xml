@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Alpha Biomes</li>
+		</mods> 
+				
+		<match Class="PatchOperationSequence">
+			<operations>
+			
+				<!-- AB_FeraliskInfestedJungle -->
+			
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/BiomeDef[defName="AB_FeraliskInfestedJungle"]/wildAnimals</xpath>
+					<value>
+						<MorrowRim_TrollPygmy>0.05</MorrowRim_TrollPygmy>
+						<MorrowRim_TrollFungal>0.05</MorrowRim_TrollFungal>
+					</value>			
+				</li>	
+				<!-- AB_GallatrossGraveyard -->
+			
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/BiomeDef[defName="AB_GallatrossGraveyard"]/wildAnimals</xpath>
+					<value>
+						<MorrowRim_TrollBarren>0.05</MorrowRim_TrollBarren>
+						<MorrowRim_TrollHill>0.025</MorrowRim_TrollHill>
+					</value>			
+				</li>	
+				
+				<!-- AB_GelatinousSuperorganism -->
+			
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/BiomeDef[defName="AB_GelatinousSuperorganism"]/wildAnimals</xpath>
+					<value>
+						<MorrowRim_TrollSwamp>0.05</MorrowRim_TrollSwamp>
+						<MorrowRim_TrollRiver>0.05</MorrowRim_TrollRiver>
+					</value>			
+				</li>	
+
+				<!-- AB_PropaneLakes -->
+			
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/BiomeDef[defName="AB_PropaneLakes"]/wildAnimals</xpath>
+					<value>
+						<MorrowRim_TrollBarren>0.05</MorrowRim_TrollBarren>
+						<MorrowRim_TrollFrost>0.05</MorrowRim_TrollFrost>
+						<MorrowRim_TrollGrahl>0.01</MorrowRim_TrollGrahl>
+					</value>			
+				</li>
+				
+				<!-- AB_PyroclasticConflagration -->
+			
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/BiomeDef[defName="AB_PyroclasticConflagration"]/wildAnimals</xpath>
+					<value>
+						<MorrowRim_TrollBoomer>0.05</MorrowRim_TrollBoomer>
+						<MorrowRim_TrollBarren>0.05</MorrowRim_TrollBarren>
+						<MorrowRim_TrollUdyrfrykte>0.01</MorrowRim_TrollUdyrfrykte>
+					</value>			
+				</li>
+				
+				<!-- AB_RockyCrags -->
+			
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/BiomeDef[defName="AB_RockyCrags"]/wildAnimals</xpath>
+					<value>
+						<MorrowRim_TrollBarren>0.05</MorrowRim_TrollBarren>
+						<MorrowRim_TrollUdyrfrykte>0.01</MorrowRim_TrollUdyrfrykte>
+					</value>			
+				</li>
+				
+				<!-- AB_TarPits -->
+			
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/BiomeDef[defName="AB_TarPits"]/wildAnimals</xpath>
+					<value>
+						<MorrowRim_TrollBarren>0.05</MorrowRim_TrollBarren>
+						<MorrowRim_TrollSwamp>0.05</MorrowRim_TrollSwamp>
+					</value>			
+				</li>
+
+			</operations>
+		</match>
+	</Operation>
+		
+</Patch>
+

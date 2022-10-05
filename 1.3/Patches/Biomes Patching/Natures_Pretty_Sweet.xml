@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Nature's Pretty Sweet</li>
+		</mods> 
+				
+		<match Class="PatchOperationSequence">
+			<operations>
+			
+				<!-- TKKN_VolcanicFlow -->
+			
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/BiomeDef[defName="TKKN_VolcanicFlow"]/wildAnimals</xpath>
+					<value>
+						<MorrowRim_TrollHill>0.01</MorrowRim_TrollHill>
+						<MorrowRim_TrollUdyrfrykte>0.005</MorrowRim_TrollUdyrfrykte>
+					</value>			
+				</li>
+				
+				<!-- TKKN_RedwoodForest -->
+			
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/BiomeDef[defName="TKKN_RedwoodForest"]/wildAnimals</xpath>
+					<value>
+						<MorrowRim_TrollForest>0.04</MorrowRim_TrollForest>
+						<MorrowRim_TrollHill>0.03</MorrowRim_TrollHill>
+						<MorrowRim_TrollUdyrfrykte>0.02</MorrowRim_TrollUdyrfrykte>
+						<MorrowRim_TrollGehenoth>0.02</MorrowRim_TrollGehenoth>
+						<VAECaves_MorrowRim_TrollCave MayRequire="VanillaExpanded.VAECaves">0.05</VAECaves_MorrowRim_TrollCave>
+					</value>			
+				</li>
+				
+				<!-- TKKN_Grasslands -->
+			
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/BiomeDef[defName="TKKN_Grasslands"]/wildAnimals</xpath>
+					<value>
+						<MorrowRim_TrollBoomer>0.07</MorrowRim_TrollBoomer>
+						<MorrowRim_TrollBarren>0.07</MorrowRim_TrollBarren>
+						<MorrowRim_TrollHill>0.04</MorrowRim_TrollHill>
+						<MorrowRim_TrollUdyrfrykte>0.01</MorrowRim_TrollUdyrfrykte>
+					</value>			
+				</li>
+				
+				<!-- TKKN_Savanna -->
+			
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/BiomeDef[defName="TKKN_Savanna"]/wildAnimals</xpath>
+					<value>
+						<MorrowRim_TrollBarren>0.1</MorrowRim_TrollBarren>
+						<MorrowRim_TrollBoomer>0.07</MorrowRim_TrollBoomer>
+						<MorrowRim_TrollPygmy>0.07</MorrowRim_TrollPygmy>
+						<MorrowRim_TrollHill>0.04</MorrowRim_TrollHill>
+						<MorrowRim_TrollUdyrfrykte>0.01</MorrowRim_TrollUdyrfrykte>
+					</value>			
+				</li>
+				
+				<!-- TKKN_Desert -->
+			
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/BiomeDef[defName="TKKN_Desert"]/wildAnimals</xpath>
+					<value>
+						<MorrowRim_TrollBarren>0.02</MorrowRim_TrollBarren>
+					</value>			
+				</li>
+				
+				<!-- TKKN_Oasis -->
+			
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/BiomeDef[defName="TKKN_Oasis"]/wildAnimals</xpath>
+					<value>
+						<MorrowRim_TrollBarren>0.02</MorrowRim_TrollBarren>
+					</value>			
+				</li>
+
+			</operations>
+		</match>
+	</Operation>
+		
+</Patch>
+

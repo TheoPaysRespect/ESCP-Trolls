@@ -1,0 +1,329 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	<!-- ==========[ESCP_TrollFrost]==========-->
+	<ThingDef ParentName="ESCP_TrollThingBase_TierTwo">
+		<defName>ESCP_TrollFrost</defName>
+		<label>frost troll</label>
+		<description>A larger species of troll that has adapted to life in arctic regions, they have even been sighted on ice sheets.\n\nTrolls are thought to have diverged from apes sometime in the past. Likely a very long time ago, as the only remaining ape-like characteristics are their appearance. Like most other trolls, the frost troll is not particularly intelligent, though more than makes up for this in brute strength.\n\nLike all other trollkin, the blood of frost trolls possesses strong regenerative abilities, allowing the troll to heal bleeding wounds relatively quickly. This blood may be harvested during butchering, and used to create elixirs of regeneration. If dealing with a particularly aggressive troll, it is best to set it on fire, as this will inhibit their regeneration.</description>
+		<statBases>
+			<ComfyTemperatureMin>-50</ComfyTemperatureMin>
+			<ComfyTemperatureMax>35</ComfyTemperatureMax>
+		</statBases>
+		<race>
+			<useMeatFrom>ESCP_TrollBarren</useMeatFrom>
+			<wildBiomes>
+				<BorealForest>0.04</BorealForest>
+				<Tundra>0.07</Tundra>
+				<IceSheet>0.1</IceSheet>
+				<SeaIce>0.1</SeaIce>
+			</wildBiomes>
+		</race>
+	</ThingDef>
+	<PawnKindDef ParentName="ESCP_TrollKindBase_TierTwo">
+		<defName>ESCP_TrollFrost</defName>
+		<label>frost troll</label>
+		<race>ESCP_TrollFrost</race>
+		<lifeStages>
+			<li>
+				<bodyGraphicData>
+					<texPath>Things/Pawn/Animal/ESCP_Troll/FrostTroll</texPath>
+					<drawSize>1.1</drawSize>
+				</bodyGraphicData>
+				<dessicatedBodyGraphicData>
+					<texPath>Things/Pawn/Animal/ESCP_Troll/Dessicated_Troll</texPath>
+					<drawSize>1.1</drawSize>
+				</dessicatedBodyGraphicData>
+			</li>
+			<li>
+				<bodyGraphicData>
+					<texPath>Things/Pawn/Animal/ESCP_Troll/FrostTroll</texPath>
+					<drawSize>1.5</drawSize>
+					<shadowData>
+						<volume>(0.3, 0.3, 0.3)</volume>
+						<offset>(0,0,-0.3)</offset>
+					</shadowData>
+				</bodyGraphicData>
+				<dessicatedBodyGraphicData>
+					<texPath>Things/Pawn/Animal/ESCP_Troll/Dessicated_Troll</texPath>
+					<drawSize>1.5</drawSize>
+				</dessicatedBodyGraphicData>
+			</li>
+			<li>
+				<bodyGraphicData>
+					<texPath>Things/Pawn/Animal/ESCP_Troll/FrostTroll</texPath>
+					<drawSize>2.2</drawSize>
+					<shadowData>
+						<volume>(0.4, 0.4, 0.4)</volume>
+						<offset>(0,0,-0.1)</offset>
+					</shadowData>
+				</bodyGraphicData>
+				<dessicatedBodyGraphicData>
+					<texPath>Things/Pawn/Animal/ESCP_Troll/Dessicated_Troll</texPath>
+					<drawSize>2.2</drawSize>
+				</dessicatedBodyGraphicData>
+			</li>
+		</lifeStages>
+	</PawnKindDef>
+	<!-- ==========[ESCP_TrollHill]==========-->
+	<ThingDef ParentName="ESCP_TrollThingBase_TierTwo">
+		<defName>ESCP_TrollHill</defName>
+		<label>hill troll</label>
+		<description>A larger species of troll most often found in rugged locales, though they will often travel down into valleys. They have been sighted in both temperate and colder regions.\n\nTrolls are thought to have diverged from apes sometime in the past. Likely a very long time ago, as the only remaining ape-like characteristics are their appearance. Like most other trolls, the hill troll is not particularly intelligent, though more than makes up for this in brute strength.\n\nLike all other trollkin, the blood of hill trolls possesses strong regenerative abilities, allowing the troll to heal bleeding wounds relatively quickly. This blood may be harvested during butchering, and used to create elixirs of regeneration. If dealing with a particularly aggressive troll, it is best to set it on fire, as this will inhibit their regeneration.</description>
+		<statBases>
+			<ComfyTemperatureMin>-10</ComfyTemperatureMin>
+		</statBases>
+		<race>
+			<useMeatFrom>ESCP_TrollBarren</useMeatFrom>
+			<wildBiomes>
+				<TemperateForest>0.04</TemperateForest>
+				<BorealForest>0.04</BorealForest>
+				<Tundra>0.04</Tundra>
+				<AridShrubland>0.04</AridShrubland>
+			</wildBiomes>
+		</race>
+	</ThingDef>
+	<PawnKindDef ParentName="ESCP_TrollKindBase_TierTwo">
+		<defName>ESCP_TrollHill</defName>
+		<label>hill troll</label>
+		<race>ESCP_TrollHill</race>
+		<lifeStages>
+			<li>
+				<bodyGraphicData>
+					<texPath>Things/Pawn/Animal/ESCP_Troll/HillTroll</texPath>
+					<drawSize>1.1</drawSize>
+				</bodyGraphicData>
+				<dessicatedBodyGraphicData>
+					<texPath>Things/Pawn/Animal/ESCP_Troll/Dessicated_Troll</texPath>
+					<drawSize>1.1</drawSize>
+				</dessicatedBodyGraphicData>
+			</li>
+			<li>
+				<bodyGraphicData>
+					<texPath>Things/Pawn/Animal/ESCP_Troll/HillTroll</texPath>
+					<drawSize>1.5</drawSize>
+					<shadowData>
+						<volume>(0.3, 0.3, 0.3)</volume>
+						<offset>(0,0,-0.3)</offset>
+					</shadowData>
+				</bodyGraphicData>
+				<dessicatedBodyGraphicData>
+					<texPath>Things/Pawn/Animal/ESCP_Troll/Dessicated_Troll</texPath>
+					<drawSize>1.5</drawSize>
+				</dessicatedBodyGraphicData>
+			</li>
+			<li>
+				<bodyGraphicData>
+					<texPath>Things/Pawn/Animal/ESCP_Troll/HillTroll</texPath>
+					<drawSize>2.2</drawSize>
+					<shadowData>
+						<volume>(0.4, 0.4, 0.4)</volume>
+						<offset>(0,0,-0.1)</offset>
+					</shadowData>
+				</bodyGraphicData>
+				<dessicatedBodyGraphicData>
+					<texPath>Things/Pawn/Animal/ESCP_Troll/Dessicated_Troll</texPath>
+					<drawSize>2.2</drawSize>
+				</dessicatedBodyGraphicData>
+			</li>
+		</lifeStages>
+	</PawnKindDef>
+	<!-- ==========[ESCP_TrollRiver]==========-->
+	<ThingDef ParentName="ESCP_TrollThingBase_TierTwo">
+		<defName>ESCP_TrollRiver</defName>
+		<label>river troll</label>
+		<description>A larger species of troll most often found near rivers, though they will often travel into swampy locales. They have been sighted in both temperate and colder regions.\n\nTrolls are thought to have diverged from apes sometime in the past. Likely a very long time ago, as the only remaining ape-like characteristics are their appearance. Like most other trolls, the river troll is not particularly intelligent, though more than makes up for this in brute strength.\n\nLike all other trollkin, the blood of river trolls possesses strong regenerative abilities, allowing the troll to heal bleeding wounds relatively quickly. This blood may be harvested during butchering, and used to create elixirs of regeneration. If dealing with a particularly aggressive troll, it is best to set it on fire, as this will inhibit their regeneration.</description>
+		<statBases>
+			<ComfyTemperatureMin>-5</ComfyTemperatureMin>
+		</statBases>
+		<race>
+			<useMeatFrom>ESCP_TrollBarren</useMeatFrom>
+			<wildBiomes>
+				<TemperateSwamp>0.04</TemperateSwamp>
+				<ColdBog>0.04</ColdBog>
+				<TropicalSwamp>0.04</TropicalSwamp>
+			</wildBiomes>
+		</race>
+	</ThingDef>
+	<PawnKindDef ParentName="ESCP_TrollKindBase_TierTwo">
+		<defName>ESCP_TrollRiver</defName>
+		<label>river troll</label>
+		<race>ESCP_TrollRiver</race>
+		<lifeStages>
+			<li>
+				<bodyGraphicData>
+					<texPath>Things/Pawn/Animal/ESCP_Troll/RiverTroll</texPath>
+					<drawSize>1.1</drawSize>
+				</bodyGraphicData>
+				<dessicatedBodyGraphicData>
+					<texPath>Things/Pawn/Animal/ESCP_Troll/Dessicated_Troll</texPath>
+					<drawSize>1.1</drawSize>
+				</dessicatedBodyGraphicData>
+			</li>
+			<li>
+				<bodyGraphicData>
+					<texPath>Things/Pawn/Animal/ESCP_Troll/RiverTroll</texPath>
+					<drawSize>1.5</drawSize>
+					<shadowData>
+						<volume>(0.3, 0.3, 0.3)</volume>
+						<offset>(0,0,-0.3)</offset>
+					</shadowData>
+				</bodyGraphicData>
+				<dessicatedBodyGraphicData>
+					<texPath>Things/Pawn/Animal/ESCP_Troll/Dessicated_Troll</texPath>
+					<drawSize>1.5</drawSize>
+				</dessicatedBodyGraphicData>
+			</li>
+			<li>
+				<bodyGraphicData>
+					<texPath>Things/Pawn/Animal/ESCP_Troll/RiverTroll</texPath>
+					<drawSize>2.2</drawSize>
+					<shadowData>
+						<volume>(0.4, 0.4, 0.4)</volume>
+						<offset>(0,0,-0.1)</offset>
+					</shadowData>
+				</bodyGraphicData>
+				<dessicatedBodyGraphicData>
+					<texPath>Things/Pawn/Animal/ESCP_Troll/Dessicated_Troll</texPath>
+					<drawSize>2.2</drawSize>
+				</dessicatedBodyGraphicData>
+			</li>
+		</lifeStages>
+	</PawnKindDef>
+	<!-- ==========[ESCP_TrollCave]==========-->
+	<ThingDef ParentName="ESCP_TrollThingBase_TierTwo">
+		<defName>ESCP_TrollCave</defName>
+		<label>cave troll</label>
+		<description>A larger species of troll that spends most of its life in caves, though can often be found wandering outside of them. They have been sighted in both temperate and colder regions.\n\nTrolls are thought to have diverged from apes sometime in the past. Likely a very long time ago, as the only remaining ape-like characteristics are their appearance. Like most other trolls, the cave troll is not particularly intelligent, though more than makes up for this in brute strength.\n\nLike all other trollkin, the blood of cave trolls possesses strong regenerative abilities, allowing the troll to heal bleeding wounds relatively quickly. This blood may be harvested during butchering, and used to create elixirs of regeneration. If dealing with a particularly aggressive troll, it is best to set it on fire, as this will inhibit their regeneration.</description>
+		<modExtensions>
+			<li Class="NocturnalAnimals.ExtendedRaceProperties" MayRequire="OskarPotocki.VanillaFactionsExpanded.Core">
+				<bodyClock>Nocturnal</bodyClock>
+			</li>
+		</modExtensions>
+		<statBases>
+			<ComfyTemperatureMin>-15</ComfyTemperatureMin>
+		</statBases>
+		<race>
+			<useMeatFrom>ESCP_TrollBarren</useMeatFrom>
+			<wildBiomes>
+				<TemperateForest>0.04</TemperateForest>
+				<BorealForest>0.04</BorealForest>
+				<Tundra>0.04</Tundra>
+				<AridShrubland>0.04</AridShrubland>
+			</wildBiomes>
+		</race>
+	</ThingDef>
+	<PawnKindDef ParentName="ESCP_TrollKindBase_TierTwo">
+		<defName>ESCP_TrollCave</defName>
+		<label>cave troll</label>
+		<race>ESCP_TrollCave</race>
+		<lifeStages>
+			<li>
+				<bodyGraphicData>
+					<texPath>Things/Pawn/Animal/ESCP_Troll/CaveTroll</texPath>
+					<drawSize>1.1</drawSize>
+				</bodyGraphicData>
+				<dessicatedBodyGraphicData>
+					<texPath>Things/Pawn/Animal/ESCP_Troll/Dessicated_Troll</texPath>
+					<drawSize>1.1</drawSize>
+				</dessicatedBodyGraphicData>
+			</li>
+			<li>
+				<bodyGraphicData>
+					<texPath>Things/Pawn/Animal/ESCP_Troll/CaveTroll</texPath>
+					<drawSize>1.5</drawSize>
+					<shadowData>
+						<volume>(0.3, 0.3, 0.3)</volume>
+						<offset>(0,0,-0.3)</offset>
+					</shadowData>
+				</bodyGraphicData>
+				<dessicatedBodyGraphicData>
+					<texPath>Things/Pawn/Animal/ESCP_Troll/Dessicated_Troll</texPath>
+					<drawSize>1.5</drawSize>
+				</dessicatedBodyGraphicData>
+			</li>
+			<li>
+				<bodyGraphicData>
+					<texPath>Things/Pawn/Animal/ESCP_Troll/CaveTroll</texPath>
+					<drawSize>2.2</drawSize>
+					<shadowData>
+						<volume>(0.4, 0.4, 0.4)</volume>
+						<offset>(0,0,-0.1)</offset>
+					</shadowData>
+				</bodyGraphicData>
+				<dessicatedBodyGraphicData>
+					<texPath>Things/Pawn/Animal/ESCP_Troll/Dessicated_Troll</texPath>
+					<drawSize>2.2</drawSize>
+				</dessicatedBodyGraphicData>
+			</li>
+		</lifeStages>
+	</PawnKindDef>
+	<!-- ==========[ESCP_TrollAnima]==========-->
+	<ThingDef ParentName="ESCP_TrollThingBase_TierTwo">
+		<defName>ESCP_TrollAnima</defName>
+		<label>anima troll</label>
+		<description>A larger species of troll, rarely sighted. It seems to have a strange connection with the anima tree, some believe the presence of an anima troll heals those nearby.\n\nTrolls are thought to have diverged from apes sometime in the past. Likely a very long time ago, as the only remaining ape-like characteristics are their appearance. Like most other trolls, the anima troll is not particularly intelligent, though more than makes up for this in brute strength.\n\nLike all other trollkin, the blood of anima trolls possesses strong regenerative abilities, allowing the troll to heal bleeding wounds relatively quickly. This blood may be harvested during butchering, and used to create elixirs of regeneration. If dealing with a particularly aggressive troll, it is best to set it on fire, as this will inhibit their regeneration.</description>
+		<statBases>
+			<PsychicSensitivity>1.5</PsychicSensitivity>
+			<MarketValue>600</MarketValue>
+		</statBases>
+		<comps>
+			<li Class="AnimalBehaviours.CompProperties_HediffEffecter" MayRequire="OskarPotocki.VanillaFactionsExpanded.Core">
+							<radius>10</radius>
+							<severity>1</severity>
+							<tickInterval>5000</tickInterval>
+							<hediff>ESCP_AnimaTrollHealing</hediff>
+						</li>
+		</comps>
+		<race>
+			<useMeatFrom>ESCP_TrollBarren</useMeatFrom>
+			<wildBiomes>
+				<!-- Only found through incident, or Anima biomes -->
+			</wildBiomes>
+		</race>
+	</ThingDef>
+	<PawnKindDef ParentName="ESCP_TrollKindBase_TierTwo">
+		<defName>ESCP_TrollAnima</defName>
+		<label>anima troll</label>
+		<race>ESCP_TrollAnima</race>
+		<lifeStages>
+			<li>
+				<bodyGraphicData>
+					<texPath>Things/Pawn/Animal/ESCP_Troll/AnimaTroll</texPath>
+					<drawSize>1.1</drawSize>
+				</bodyGraphicData>
+				<dessicatedBodyGraphicData>
+					<texPath>Things/Pawn/Animal/ESCP_Troll/Dessicated_Troll</texPath>
+					<drawSize>1.1</drawSize>
+				</dessicatedBodyGraphicData>
+			</li>
+			<li>
+				<bodyGraphicData>
+					<texPath>Things/Pawn/Animal/ESCP_Troll/AnimaTroll</texPath>
+					<drawSize>1.5</drawSize>
+					<shadowData>
+						<volume>(0.3, 0.3, 0.3)</volume>
+						<offset>(0,0,-0.3)</offset>
+					</shadowData>
+				</bodyGraphicData>
+				<dessicatedBodyGraphicData>
+					<texPath>Things/Pawn/Animal/ESCP_Troll/Dessicated_Troll</texPath>
+					<drawSize>1.5</drawSize>
+				</dessicatedBodyGraphicData>
+			</li>
+			<li>
+				<bodyGraphicData>
+					<texPath>Things/Pawn/Animal/ESCP_Troll/AnimaTroll</texPath>
+					<drawSize>2.2</drawSize>
+					<shadowData>
+						<volume>(0.4, 0.4, 0.4)</volume>
+						<offset>(0,0,-0.1)</offset>
+					</shadowData>
+				</bodyGraphicData>
+				<dessicatedBodyGraphicData>
+					<texPath>Things/Pawn/Animal/ESCP_Troll/Dessicated_Troll</texPath>
+					<drawSize>2.2</drawSize>
+				</dessicatedBodyGraphicData>
+			</li>
+		</lifeStages>
+	</PawnKindDef>
+</Defs>

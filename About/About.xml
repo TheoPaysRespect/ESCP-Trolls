@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ModMetaData>
+	<name>ESCP - Trolls</name>
+	<packageId>SirMashedPotato.ESCP.Trolls</packageId>
+	<author>SirMashedPotato</author>
+	<supportedVersions>
+    	<li>1.3</li>
+	</supportedVersions>
+	<description>A re-released version of MorrowRim Trolls. Do not upgrade to this version mid save. Or do if you want, just don't complain to me after you do.
+	
+	Adds in several types of troll that will spawn rarely in various biomes, both vanilla and modded. Trolls can be butchered for trolls blood, which can be used to make elixirs that heal bleeding wounds when consumed.
+	
+	-Supports Vanilla Achievements Expanded.
+	
+	-Works with Advanced Biomes
+	-Works with Alpha Biomes
+	-Works with Biomes! Islands
+	-Works with MorrowRim
+	-Works with MorrowRim - Ashlands Swamp
+	-Works with MorrowRim - Volcanic Ashlands
+	-Works with MorrowRim - Grazelands
+	-Works with Nature's Pretty Sweet
+	-Works with Realistic Planets
+	-Works with Regrowth - Volcanic Ice Sheet
+	-Works with Regrowth - Wasteland
+	
+	-Based on the 'Elder Scrolls' series by Bethesda Game Studios.
+
+	</description>
+	
+	<modDependenciesByVersion>
+	</modDependenciesByVersion>
+	<loadAfter>
+	  <li>vanillaexpanded.achievements</li>
+    </loadAfter>
+	<incompatibleWith>
+		<li>SirMashedPotato.MorrowRim.Trolls</li>
+    </incompatibleWith>
+</ModMetaData>
