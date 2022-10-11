@@ -1,0 +1,445 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	<!-- ==========[ESCP_TrollGrahl]==========-->
+	<ThingDef ParentName="ESCP_TrollThingBase">
+		<defName>ESCP_TrollGrahl</defName>
+		<label>grahl</label>
+		<description>One of the most feared species of troll, an ancient beast only sighted in the coldest regions of the worlds. The grahl spends most of its life in deep glacial caverns, only emerging in its search for food. The tusks of the grahl are a fine trophy, and will surely fetch a decent price.\n\n The grahl is thought to be a more ancient species than most other trolls, likely a remnant of a bygone era. Like most other trolls, the grahl is not particularly intelligent, though more than makes up for this in brute strength.\n\nLike all other trollkin, the blood of grahl possesses strong regenerative abilities, allowing the troll to heal bleeding wounds relatively quickly. This blood may be harvested during butchering, and used to create elixirs of regeneration. If dealing with a particularly aggressive troll, it is best to set it on fire, as this will inhibit their regeneration.</description>
+		<modExtensions>
+			<li Class="ESCP_Trolls.BiomeFeatureRequirements">
+				<requireCaves>True</requireCaves>
+			</li>
+			<li Class="NocturnalAnimals.ExtendedRaceProperties" MayRequire="OskarPotocki.VanillaFactionsExpanded.Core">
+				<bodyClock>Nocturnal</bodyClock>
+			</li>
+		</modExtensions>
+		<tools>
+			<!-- hands -->
+			<li>
+				<label>fist</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>25</power>
+				<cooldownTime>2.6</cooldownTime>
+				<linkedBodyPartsGroup>Hands</linkedBodyPartsGroup>
+				<surpriseAttack>
+					<extraMeleeDamages>
+						<li>
+							<def>Stun</def>
+							<amount>18</amount>
+						</li>
+					</extraMeleeDamages>
+				</surpriseAttack>
+			</li>
+			<li>
+				<label>left claw</label>
+				<capacities>
+					<li>Scratch</li>
+				</capacities>
+				<power>17</power>
+				<cooldownTime>2</cooldownTime>
+				<linkedBodyPartsGroup>FrontLeftClaws</linkedBodyPartsGroup>
+				<surpriseAttack>
+					<extraMeleeDamages>
+						<li>
+							<def>Stun</def>
+							<amount>14</amount>
+						</li>
+					</extraMeleeDamages>
+				</surpriseAttack>
+			</li>
+			<li>
+				<label>right claw</label>
+				<capacities>
+					<li>Scratch</li>
+				</capacities>
+				<power>17</power>
+				<cooldownTime>2</cooldownTime>
+				<linkedBodyPartsGroup>FrontRightClaws</linkedBodyPartsGroup>
+				<surpriseAttack>
+					<extraMeleeDamages>
+						<li>
+							<def>Stun</def>
+							<amount>14</amount>
+						</li>
+					</extraMeleeDamages>
+				</surpriseAttack>
+			</li>
+			<!-- head -->
+			<li>
+				<capacities>
+					<li>Bite</li>
+				</capacities>
+				<power>20</power>
+				<cooldownTime>2</cooldownTime>
+				<linkedBodyPartsGroup>Teeth</linkedBodyPartsGroup>
+				<chanceFactor>2.6</chanceFactor>
+				<surpriseAttack>
+					<extraMeleeDamages>
+						<li>
+							<def>Stun</def>
+							<amount>14</amount>
+						</li>
+					</extraMeleeDamages>
+				</surpriseAttack>
+			</li>
+			<li>
+				<label>head</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>11</power>
+				<cooldownTime>2</cooldownTime>
+				<linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+				<ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+				<chanceFactor>0.2</chanceFactor>
+			</li>
+			<li>
+				<label>tusk</label>
+				<capacities>
+					<li>Scratch</li>
+					<li>Stab</li>
+				</capacities>
+				<power>25</power>
+				<cooldownTime>2.6</cooldownTime>
+				<linkedBodyPartsGroup>TuskAttackTool</linkedBodyPartsGroup>
+			</li>
+		</tools>
+		<statBases>
+			<ComfyTemperatureMin>-70</ComfyTemperatureMin>
+			<ComfyTemperatureMax>25</ComfyTemperatureMax>
+			<ArmorRating_Blunt>0.14</ArmorRating_Blunt>
+			<ArmorRating_Sharp>0.16</ArmorRating_Sharp>
+			<MarketValue>700</MarketValue>
+		</statBases>
+		<race>
+			<body>ESCP_TrollTusked</body>
+			<useMeatFrom>ESCP_TrollBarren</useMeatFrom>
+			<maxPreyBodySize>2.0</maxPreyBodySize>
+			<baseBodySize>1.9</baseBodySize>
+			<baseHungerRate>0.35</baseHungerRate>
+			<baseHealthScale>3.8</baseHealthScale>
+			<leatherDef>ESCP_Leather_Grahl</leatherDef>
+			<gestationPeriodDays>29</gestationPeriodDays>
+			<lifeExpectancy>16</lifeExpectancy>
+			<wildBiomes>
+				<Tundra>0.03</Tundra>
+				<IceSheet>0.05</IceSheet>
+				<SeaIce>0.05</SeaIce>
+				<!-- Biomes! -->
+				<BiomesIslands_BorealIsland MayRequire="BiomesTeam.BiomesIslands">0.03</BiomesIslands_BorealIsland>
+				<BiomesIslands_BorealArchipelago MayRequire="BiomesTeam.BiomesIslands">0.03</BiomesIslands_BorealArchipelago>
+				<BiomesIslands_TundraIsland MayRequire="BiomesTeam.BiomesIslands">0.03</BiomesIslands_TundraIsland>
+				<BiomesIslands_TundraArchipelago MayRequire="BiomesTeam.BiomesIslands">0.03</BiomesIslands_TundraArchipelago>
+				<!-- More Vanilla Biomes -->
+				<ZBiome_GlacialShield MayRequire="zylle.MoreVanillaBiomes">0.03</ZBiome_GlacialShield>
+				<ZBiome_Iceberg_NoBeach MayRequire="zylle.MoreVanillaBiomes">0.05</ZBiome_Iceberg_NoBeach>
+				<!-- Alpha Biomes -->
+				<AB_PropaneLakes MayRequire="sarg.alphabiomes">0.05</AB_PropaneLakes>
+				<!-- Winter taiga -->
+				<WinterTaiga MayRequire="reel.FrozenForest">0.03</WinterTaiga>
+			</wildBiomes>
+			<lifeStageAges Inherit="False">
+				<li>
+					<def>AnimalBaby</def>
+					<minAge>0</minAge>
+				</li>
+				<li>
+					<def>AnimalJuvenile</def>
+					<minAge>0.8</minAge>
+				</li>
+				<li>
+					<def>AnimalAdult</def>
+					<minAge>2.0</minAge>
+					<soundWounded>Pawn_Elephant_Injured</soundWounded>
+					<soundDeath>ESCP_Pawn_Troll_Death</soundDeath>
+					<soundCall>ESCP_Pawn_Troll_Call</soundCall>
+					<soundAngry>Pawn_Elephant_Angry</soundAngry>
+				</li>
+			</lifeStageAges>
+		</race>
+		<tradeTags Inherit="false">
+			<li>AnimalExotic</li>
+			<li>ESCP_Troll</li>
+		</tradeTags>
+		<butcherProducts>
+			<ESCP_TrollBlood>15</ESCP_TrollBlood>
+		</butcherProducts>
+	</ThingDef>
+	<PawnKindDef ParentName="AnimalKindBase">
+		<defName>ESCP_TrollGrahl</defName>
+		<label>grahl</label>
+		<race>ESCP_TrollGrahl</race>
+		<combatPower>260</combatPower>
+		<ecoSystemWeight>0.50</ecoSystemWeight>
+		<wildGroupSize>1~1</wildGroupSize>
+		<lifeStages>
+			<li>
+				<bodyGraphicData>
+					<texPath>Things/Pawn/Animal/ESCP_Troll/Grahl</texPath>
+					<drawSize>2.0</drawSize>
+				</bodyGraphicData>
+				<dessicatedBodyGraphicData>
+					<texPath>Things/Pawn/Animal/ESCP_Troll/Dessicated_Troll</texPath>
+					<drawSize>2.0</drawSize>
+				</dessicatedBodyGraphicData>
+			</li>
+			<li>
+				<bodyGraphicData>
+					<texPath>Things/Pawn/Animal/ESCP_Troll/Grahl</texPath>
+					<drawSize>2.4</drawSize>
+					<shadowData>
+						<volume>(0.3, 0.3, 0.3)</volume>
+						<offset>(0,0,-0.3)</offset>
+					</shadowData>
+				</bodyGraphicData>
+				<dessicatedBodyGraphicData>
+					<texPath>Things/Pawn/Animal/ESCP_Troll/Dessicated_Troll</texPath>
+					<drawSize>2.4</drawSize>
+				</dessicatedBodyGraphicData>
+			</li>
+			<li>
+				<bodyGraphicData>
+					<texPath>Things/Pawn/Animal/ESCP_Troll/Grahl</texPath>
+					<drawSize>3.1</drawSize>
+					<shadowData>
+						<volume>(0.4, 0.4, 0.4)</volume>
+						<offset>(0,0,-0.1)</offset>
+					</shadowData>
+				</bodyGraphicData>
+				<dessicatedBodyGraphicData>
+					<texPath>Things/Pawn/Animal/ESCP_Troll/Dessicated_Troll</texPath>
+					<drawSize>3.1</drawSize>
+				</dessicatedBodyGraphicData>
+				<butcherBodyPart>
+					<bodyPartGroup>TuskAttackTool</bodyPartGroup>
+					<thing>ESCP_GrahlTusk</thing>
+				</butcherBodyPart>
+			</li>
+		</lifeStages>
+	</PawnKindDef>
+	<!-- ==========[ESCP_TrollUdyrfrykte]==========-->
+	<ThingDef ParentName="ESCP_TrollThingBase">
+		<defName>ESCP_TrollUdyrfrykte</defName>
+		<label>udyrfrykte</label>
+		<description>An elusive species of troll, often thought to only exist in tales meant to scare children. There have been various sightings of udyrfrykte in a variety of regions.\n\nThe udyrfrykte appears to be quite different to most other species of troll. They have been known to utilise weapons, often legs or arms torn from hapless villagers. They are also much faster, both in terms of running and attacking. From those coherent enough to form cohesive sentences, the udyrfrykte appears to regenerate wounds at an alarming rate.\n\nLike all other trollkin, the blood of udyrfrykte trolls possesses strong regenerative abilities, allowing the troll to heal bleeding wounds relatively quickly. This blood may be harvested during butchering, and used to create elixirs of regeneration. If dealing with a particularly aggressive troll, it is best to set it on fire, as this will inhibit their regeneration.</description>
+		<modExtensions>
+			<li Class="NocturnalAnimals.ExtendedRaceProperties" MayRequire="OskarPotocki.VanillaFactionsExpanded.Core">
+				<bodyClock>Nocturnal</bodyClock>
+			</li>
+			<li Class="MorrowRim.ExtendedRaceProperties" MayRequire="SirMashedPotato.MorrowRim">
+				<ashResistant>Resistant</ashResistant>
+			</li>
+		</modExtensions>
+		<tools>
+			<!-- hands -->
+			<li>
+				<label>fist</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>17</power>
+				<cooldownTime>1.4</cooldownTime>
+				<linkedBodyPartsGroup>Hands</linkedBodyPartsGroup>
+				<surpriseAttack>
+					<extraMeleeDamages>
+						<li>
+							<def>Stun</def>
+							<amount>18</amount>
+						</li>
+					</extraMeleeDamages>
+				</surpriseAttack>
+			</li>
+			<li>
+				<label>left claw</label>
+				<capacities>
+					<li>Scratch</li>
+				</capacities>
+				<power>17</power>
+				<cooldownTime>1.4</cooldownTime>
+				<linkedBodyPartsGroup>FrontLeftClaws</linkedBodyPartsGroup>
+				<surpriseAttack>
+					<extraMeleeDamages>
+						<li>
+							<def>Stun</def>
+							<amount>14</amount>
+						</li>
+					</extraMeleeDamages>
+				</surpriseAttack>
+			</li>
+			<li>
+				<label>right claw</label>
+				<capacities>
+					<li>Scratch</li>
+				</capacities>
+				<power>17</power>
+				<cooldownTime>1.4</cooldownTime>
+				<linkedBodyPartsGroup>FrontRightClaws</linkedBodyPartsGroup>
+				<surpriseAttack>
+					<extraMeleeDamages>
+						<li>
+							<def>Stun</def>
+							<amount>14</amount>
+						</li>
+					</extraMeleeDamages>
+				</surpriseAttack>
+			</li>
+			<!-- head -->
+			<li>
+				<capacities>
+					<li>Bite</li>
+				</capacities>
+				<power>20</power>
+				<cooldownTime>2</cooldownTime>
+				<linkedBodyPartsGroup>Teeth</linkedBodyPartsGroup>
+				<chanceFactor>2.6</chanceFactor>
+				<surpriseAttack>
+					<extraMeleeDamages>
+						<li>
+							<def>Stun</def>
+							<amount>14</amount>
+						</li>
+					</extraMeleeDamages>
+				</surpriseAttack>
+			</li>
+			<li>
+				<label>head</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>11</power>
+				<cooldownTime>2</cooldownTime>
+				<linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+				<ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+				<chanceFactor>0.2</chanceFactor>
+			</li>
+		</tools>
+		<statBases>
+			<MoveSpeed>4.1</MoveSpeed>
+			<ComfyTemperatureMin>-60</ComfyTemperatureMin>
+			<MarketValue>600</MarketValue>
+		</statBases>
+		<comps>
+			<li Class="ESCP_Trolls.CompProperties_Regeneration">
+				<Severity>0.5</Severity>
+				<BaseNumber>10</BaseNumber>
+				<Tend>0.5</Tend>
+				<Ticks>20</Ticks>
+			</li>
+		</comps>
+		<race>
+			<body>ESCP_TrollTusked</body>
+			<useMeatFrom>ESCP_TrollBarren</useMeatFrom>
+			<trainability>Advanced</trainability>
+			<wildBiomes>
+				<TemperateForest>0.02</TemperateForest>
+				<TemperateSwamp>0.02</TemperateSwamp>
+				<BorealForest>0.02</BorealForest>
+				<Tundra>0.02</Tundra>
+				<ColdBog>0.02</ColdBog>
+				<!-- MorrowRim -->
+				<MorrowRim_Ashlands MayRequire="SirMashedPotato.MorrowRim">0.02</MorrowRim_Ashlands>
+				<MorrowRim_AshSwamp  MayRequire="SirMashedPotato.MorrowRim.AshSwamp">0.02</MorrowRim_AshSwamp>
+				<MorrowRim_VolcanicAshlands MayRequire="SirMashedPotato.MorrowRim.VolcanicAshlands">0.02</MorrowRim_VolcanicAshlands>
+				<MorrowRim_Grazelands MayRequire="SirMashedPotato.MorrowRim.Grazelands">0.02</MorrowRim_Grazelands>
+				<!-- Biomes! -->
+				<BiomesIslands_TemperateIsland MayRequire="BiomesTeam.BiomesIslands">0.01</BiomesIslands_TemperateIsland>
+				<BiomesIslands_TemperateArchipelago MayRequire="BiomesTeam.BiomesIslands">0.01</BiomesIslands_TemperateArchipelago>
+				<BiomesIslands_BorealIsland MayRequire="BiomesTeam.BiomesIslands">0.01</BiomesIslands_BorealIsland>
+				<BiomesIslands_BorealArchipelago MayRequire="BiomesTeam.BiomesIslands">0.01</BiomesIslands_BorealArchipelago>
+				<BiomesIslands_TundraIsland MayRequire="BiomesTeam.BiomesIslands">0.01</BiomesIslands_TundraIsland>
+				<BiomesIslands_TundraArchipelago MayRequire="BiomesTeam.BiomesIslands">0.01</BiomesIslands_TundraArchipelago>
+				<!-- Regrowth -->
+				<RG_AspenForest MayRequire="ReGrowth.BOTR.AspenForest">0.02</RG_AspenForest>
+				<!-- More Vanilla Biomes -->
+				<ZBiome_Marsh MayRequire="zylle.MoreVanillaBiomes">0.02</ZBiome_Marsh>
+				<ZBiome_AlpineMeadow MayRequire="zylle.MoreVanillaBiomes">0.02</ZBiome_AlpineMeadow>
+				<ZBiome_CloudForest MayRequire="zylle.MoreVanillaBiomes">0.02</ZBiome_CloudForest>
+				<ZBiome_CoastalDunes MayRequire="zylle.MoreVanillaBiomes">0.02</ZBiome_CoastalDunes>
+				<ZBiome_GlacialShield MayRequire="zylle.MoreVanillaBiomes">0.02</ZBiome_GlacialShield>
+				<!-- Winter taiga -->
+				<WinterTaiga MayRequire="reel.FrozenForest">0.02</WinterTaiga>
+			</wildBiomes>
+			<!-- Inherit="False" for the sound patch mod -->
+			<lifeStageAges Inherit="false">
+				<li>
+					<def>AnimalBaby</def>
+					<minAge>0</minAge>
+				</li>
+				<li>
+					<def>AnimalJuvenile</def>
+					<minAge>0.3</minAge>
+				</li>
+				<li>
+					<def>AnimalAdult</def>
+					<minAge>0.8</minAge>
+					<soundWounded>ESCP_Pawn_Troll_Wounded</soundWounded>
+					<soundDeath>ESCP_Pawn_Troll_Death</soundDeath>
+					<soundCall>ESCP_Pawn_Troll_Call</soundCall>
+					<soundAngry>ESCP_Pawn_Troll_Angry</soundAngry>
+				</li>
+			</lifeStageAges>
+		</race>
+		<tradeTags Inherit="false">
+			<li>AnimalExotic</li>
+			<li>ESCP_Troll</li>
+		</tradeTags>
+		<butcherProducts Inherit="false">
+			<ESCP_TrollBlood>15</ESCP_TrollBlood>
+		</butcherProducts>
+	</ThingDef>
+	<PawnKindDef ParentName="AnimalKindBase">
+		<defName>ESCP_TrollUdyrfrykte</defName>
+		<label>udyrfrykte</label>
+		<race>ESCP_TrollUdyrfrykte</race>
+		<combatPower>300</combatPower>
+		<ecoSystemWeight>0.50</ecoSystemWeight>
+		<wildGroupSize>1~1</wildGroupSize>
+		<lifeStages>
+			<li>
+				<bodyGraphicData>
+					<texPath>Things/Pawn/Animal/ESCP_Troll/Udyrfrykte</texPath>
+					<drawSize>1.1</drawSize>
+				</bodyGraphicData>
+				<dessicatedBodyGraphicData>
+					<texPath>Things/Pawn/Animal/ESCP_Troll/Dessicated_Troll</texPath>
+					<drawSize>1.1</drawSize>
+				</dessicatedBodyGraphicData>
+			</li>
+			<li>
+				<bodyGraphicData>
+					<texPath>Things/Pawn/Animal/ESCP_Troll/Udyrfrykte</texPath>
+					<drawSize>1.5</drawSize>
+					<shadowData>
+						<volume>(0.3, 0.3, 0.3)</volume>
+						<offset>(0,0,-0.3)</offset>
+					</shadowData>
+				</bodyGraphicData>
+				<dessicatedBodyGraphicData>
+					<texPath>Things/Pawn/Animal/ESCP_Troll/Dessicated_Troll</texPath>
+					<drawSize>1.5</drawSize>
+				</dessicatedBodyGraphicData>
+			</li>
+			<li>
+				<bodyGraphicData>
+					<texPath>Things/Pawn/Animal/ESCP_Troll/Udyrfrykte</texPath>
+					<drawSize>2.3</drawSize>
+					<shadowData>
+						<volume>(0.4, 0.4, 0.4)</volume>
+						<offset>(0,0,-0.1)</offset>
+					</shadowData>
+				</bodyGraphicData>
+				<dessicatedBodyGraphicData>
+					<texPath>Things/Pawn/Animal/ESCP_Troll/Dessicated_Troll</texPath>
+					<drawSize>2.3</drawSize>
+				</dessicatedBodyGraphicData>
+				<butcherBodyPart>
+					<bodyPartGroup>TuskAttackTool</bodyPartGroup>
+					<thing>ESCP_UderfrykteTusk</thing>
+				</butcherBodyPart>
+			</li>
+		</lifeStages>
+	</PawnKindDef>
+	<!-- ==========[ESCP_TrollGrahlPrimal]==========-->
+</Defs>

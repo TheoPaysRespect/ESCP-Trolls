@@ -58,6 +58,10 @@
 					<value>1</value>
 				</li>
 				<li>
+					<key>ESCP_TrollCoastal</key>
+					<value>1</value>
+				</li>
+				<li>
 					<key>ESCP_TrollGrahl</key>
 					<value>1</value>
 				</li>
@@ -130,6 +134,10 @@
 				</li>
 				<li>
 					<key>ESCP_TrollCave</key>
+					<value>1</value>
+				</li>
+				<li>
+					<key>ESCP_TrollCoastal</key>
 					<value>1</value>
 				</li>
 				<li>

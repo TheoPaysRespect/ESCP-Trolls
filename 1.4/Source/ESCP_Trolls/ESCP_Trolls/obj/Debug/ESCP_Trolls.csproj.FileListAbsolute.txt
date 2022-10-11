@@ -1,0 +1,8 @@
+J:\Modding\Github\ESCP-Trolls\1.3\Assemblies\ESCP_Trolls.dll
+J:\Modding\Github\ESCP-Trolls\1.3\Source\ESCP_Trolls\ESCP_Trolls\obj\Debug\ESCP_Trolls.csproj.AssemblyReference.cache
+J:\Modding\Github\ESCP-Trolls\1.3\Source\ESCP_Trolls\ESCP_Trolls\obj\Debug\ESCP_Trolls.csproj.CoreCompileInputs.cache
+J:\Modding\Github\ESCP-Trolls\1.3\Source\ESCP_Trolls\ESCP_Trolls\obj\Debug\ESCP_Trolls.dll
+J:\Modding\Github\ESCP-Trolls\1.4\Assemblies\ESCP_Trolls.dll
+J:\Modding\Github\ESCP-Trolls\1.4\Source\ESCP_Trolls\ESCP_Trolls\obj\Debug\ESCP_Trolls.csproj.AssemblyReference.cache
+J:\Modding\Github\ESCP-Trolls\1.4\Source\ESCP_Trolls\ESCP_Trolls\obj\Debug\ESCP_Trolls.csproj.CoreCompileInputs.cache
+J:\Modding\Github\ESCP-Trolls\1.4\Source\ESCP_Trolls\ESCP_Trolls\obj\Debug\ESCP_Trolls.dll
