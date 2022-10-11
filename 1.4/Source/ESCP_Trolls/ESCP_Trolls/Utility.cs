@@ -1,7 +1,6 @@
 ﻿using Verse;
 using RimWorld;
 using System.Linq;
-using System.Collections.Generic;
 
 namespace ESCP_Trolls
 {
@@ -30,23 +29,4 @@ namespace ESCP_Trolls
 			}
 		}
     }
-
-	[StaticConstructorOnStartup]
-	public static class Utility_OnStartup
-	{
-		public static List<PawnKindDef> trollKindDefs = new List<PawnKindDef> { };
-		public static void FetchTrollKindDefs()
-		{
-			List<PawnKindDef> allDefsListForReading = DefDatabase<PawnKindDef>.AllDefsListForReading;
-			for (int i = 0; i < allDefsListForReading.Count; i++)
-			{
-				PawnKindDef pawnKindDef = allDefsListForReading[i];
-				bool flag = pawnKindDef.race.race.Animal && pawnKindDef.race.tradeTags != null && pawnKindDef.race.tradeTags.Contains("ESCP_Troll");
-				if (flag)
-				{
-					trollKindDefs.Add(pawnKindDef);
-				}
-			}
-		}
-	}
 }

@@ -55,6 +55,10 @@
       <HintPath>I:\Steam_Library\steamapps\common\RimWorld\RimWorldWin64_Data\Managed\UnityEngine.CoreModule.dll</HintPath>
       <Private>False</Private>
     </Reference>
+    <Reference Include="UnityEngine.TextRenderingModule">
+      <HintPath>I:\Steam_Library\steamapps\common\RimWorld\RimWorldWin64_Data\Managed\UnityEngine.TextRenderingModule.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="DefModExtensions\BiomeFeatureRequirements.cs" />
@@ -67,6 +71,9 @@
     <Compile Include="IncidentWorkers\IncidentWorker_TrollWandersIn.cs" />
     <Compile Include="IngestionOutcomeDoers\IngestionOutcomeDoer_DelayedRegeneration.cs" />
     <Compile Include="IngestionOutcomeDoers\IngestionOutcomeDoer_Regeneration.cs" />
+    <Compile Include="Utility_OnStartup.cs" />
+    <Compile Include="ModSettings\Trolls_Mod.cs" />
+    <Compile Include="ModSettings\Trolls_ModSettings.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="ThingComps\CompProperties_Regeneration.cs" />
     <Compile Include="ThingComps\Comp_Regeneration.cs" />

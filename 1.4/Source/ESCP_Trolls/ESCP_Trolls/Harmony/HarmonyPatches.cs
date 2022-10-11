@@ -112,7 +112,7 @@ namespace ESCP_Trolls
             }
         }
     }
-    /*
+    /* Effectively the same as above, leaving here in case it's needed
     [HarmonyPatch(typeof(MapTemperature))]
     [HarmonyPatch("SeasonAcceptableFor")]
     public static class MapTemperature_SeasonAcceptableFor_Patch
@@ -174,7 +174,8 @@ namespace ESCP_Trolls
         {
             if (Utility_OnStartup.trollKindDefs.Contains(animalDef))
             {
-                __result *= settings;
+                Log.Message("Increasing commonality for: " + animalDef.race.label);
+                __result *= Trolls_ModSettings.TrollCommonalityMult;
             }
         }
     }

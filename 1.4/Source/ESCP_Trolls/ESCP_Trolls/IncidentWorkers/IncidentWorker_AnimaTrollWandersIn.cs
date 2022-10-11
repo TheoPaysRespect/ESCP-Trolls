@@ -8,7 +8,7 @@ namespace ESCP_Trolls
 		protected override bool CanFireNowSub(IncidentParms parms)
 		{
 			Map map = (Map)parms.target;
-            return this.TryFindEntryCell(map, out _);
+            return Trolls_ModSettings.EnableAnimaTrollIncident && TryFindEntryCell(map, out _);
         }
 		protected override bool TryExecuteWorker(IncidentParms parms)
 		{
