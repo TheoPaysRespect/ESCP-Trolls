@@ -6,4 +6,14 @@
     <ESCP_Trolls_LetterLabelTrollWandersIn>{0} wanders in</ESCP_Trolls_LetterLabelTrollWandersIn>
     <ESCP_Trolls_LetterTrollWandersIn>A {0} has wandered into the area. You may kill it, or attempt to tame it.</ESCP_Trolls_LetterTrollWandersIn>
 	
+	<!-- Settings -->
+	<ESCP_Trolls_ModName>ESCP - Trolls</ESCP_Trolls_ModName>
+	<ESCP_Reset>Reset all settings</ESCP_Reset>
+	
+	<ESCP_Trolls_EnableTrollHuntQuest>Enable the Troll Hunt quest</ESCP_Trolls_EnableTrollHuntQuest>
+	<ESCP_Trolls_EnableAnimaTrollIncident>Enable the Anima Troll wanders in incident</ESCP_Trolls_EnableAnimaTrollIncident>
+	<ESCP_Trolls_TrollCommonalityMult>Multiplier for the spawn rate of trolls</ESCP_Trolls_TrollCommonalityMult>
+	<ESCP_Trolls_TileFeatureRequirement>Enable specific trolls requring specific tile features to spawn</ESCP_Trolls_TileFeatureRequirement>
+	<ESCP_Trolls_TileFeatureRequirement_Tooltip>If enabled, certain kinds of troll will only appear on maps with specific features, such as rivers or caves.\n\nThis affects:</ESCP_Trolls_TileFeatureRequirement_Tooltip>
+	
 </LanguageData>
