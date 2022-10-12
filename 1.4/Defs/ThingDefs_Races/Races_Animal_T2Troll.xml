@@ -185,6 +185,7 @@
 				<ColdBog>0.07</ColdBog>
 				<TropicalRainforest>0.04</TropicalRainforest>
 				<TropicalSwamp>0.07</TropicalSwamp>
+				<AridShrubland>0.03</AridShrubland>
 				<!-- MorrowRim -->
 				<MorrowRim_AshSwamp MayRequire="SirMashedPotato.MorrowRim.AshSwamp">0.07</MorrowRim_AshSwamp>
 				<!-- More Vanilla Biomes -->
@@ -345,6 +346,8 @@
 			<wildBiomes>
 				<TemperateForest>0.07</TemperateForest>
 				<BorealForest>0.07</BorealForest>
+				<AridShrubland>0.04</AridShrubland>
+				<TropicalRainforest>0.04</TropicalRainforest>
 				<!-- MorrowRim -->
 				<MorrowRim_Ashlands MayRequire="SirMashedPotato.MorrowRim">0.07</MorrowRim_Ashlands>
 				<!-- Regrowth Aspen -->
@@ -354,6 +357,8 @@
 				<BiomesIslands_TemperateArchipelago MayRequire="BiomesTeam.BiomesIslands">0.07</BiomesIslands_TemperateArchipelago>
 				<BiomesIslands_BorealIsland MayRequire="BiomesTeam.BiomesIslands">0.05</BiomesIslands_BorealIsland>
 				<BiomesIslands_BorealArchipelago MayRequire="BiomesTeam.BiomesIslands">0.05</BiomesIslands_BorealArchipelago>
+				<BiomesIslands_TropicalIsland MayRequire="BiomesTeam.BiomesIslands">0.05</BiomesIslands_TropicalIsland>
+				<BiomesIslands_TropicalArchipelago MayRequire="BiomesTeam.BiomesIslands">0.05</BiomesIslands_TropicalArchipelago>
 				<!-- More Vanilla Biomes -->
 				<ZBiome_Marsh MayRequire="zylle.MoreVanillaBiomes">0.07</ZBiome_Marsh>
 				<ZBiome_CoastalDunes MayRequire="zylle.MoreVanillaBiomes">0.07</ZBiome_CoastalDunes>
@@ -369,18 +374,18 @@
 		<lifeStages>
 			<li>
 				<bodyGraphicData>
-					<texPath>Things/Pawn/Animal/ESCP_Troll/BarrenTroll</texPath>
-					<drawSize>0.9</drawSize>
+					<texPath>Things/Pawn/Animal/ESCP_Troll/CoastalTroll</texPath>
+					<drawSize>1.1</drawSize>
 				</bodyGraphicData>
 				<dessicatedBodyGraphicData>
 					<texPath>Things/Pawn/Animal/ESCP_Troll/Dessicated_Troll</texPath>
-					<drawSize>0.9</drawSize>
+					<drawSize>1.1</drawSize>
 				</dessicatedBodyGraphicData>
 			</li>
 			<li>
 				<bodyGraphicData>
-					<texPath>Things/Pawn/Animal/ESCP_Troll/BarrenTroll</texPath>
-					<drawSize>1.2</drawSize>
+					<texPath>Things/Pawn/Animal/ESCP_Troll/CoastalTroll</texPath>
+					<drawSize>1.5</drawSize>
 					<shadowData>
 						<volume>(0.3, 0.3, 0.3)</volume>
 						<offset>(0,0,-0.3)</offset>
@@ -388,13 +393,13 @@
 				</bodyGraphicData>
 				<dessicatedBodyGraphicData>
 					<texPath>Things/Pawn/Animal/ESCP_Troll/Dessicated_Troll</texPath>
-					<drawSize>1.2</drawSize>
+					<drawSize>1.5</drawSize>
 				</dessicatedBodyGraphicData>
 			</li>
 			<li>
 				<bodyGraphicData>
-					<texPath>Things/Pawn/Animal/ESCP_Troll/BarrenTroll</texPath>
-					<drawSize>1.9</drawSize>
+					<texPath>Things/Pawn/Animal/ESCP_Troll/CoastalTroll</texPath>
+					<drawSize>2.2</drawSize>
 					<shadowData>
 						<volume>(0.4, 0.4, 0.4)</volume>
 						<offset>(0,0,-0.1)</offset>
@@ -402,7 +407,7 @@
 				</bodyGraphicData>
 				<dessicatedBodyGraphicData>
 					<texPath>Things/Pawn/Animal/ESCP_Troll/Dessicated_Troll</texPath>
-					<drawSize>1.9</drawSize>
+					<drawSize>2.2</drawSize>
 				</dessicatedBodyGraphicData>
 			</li>
 		</lifeStages>

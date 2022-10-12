@@ -7,9 +7,9 @@
 		<subSounds>
 			<li>
 				<grains>
-					<li Class="AudioGrain_Folder">
+					<li Class="AudioGrain_Clip">
 						<!-- Bull - SoundBible.com-1252561191 -->
-						<clipFolderPath>Pawn/Animal/ESCP_Troll/Troll_Calls</clipFolderPath>
+						<clipPath>Pawn/Animal/ESCP_Troll/Troll_Calls</clipPath>
 					</li>
 				</grains>
 				<volumeRange>35.42672~34.7734</volumeRange>
@@ -26,9 +26,9 @@
 		<subSounds>
 			<li>
 				<grains>
-					<li Class="AudioGrain_Folder">
+					<li Class="AudioGrain_Clip">
 						<!-- Large Angry Dog - SoundBible.com-1015886858 -->
-						<clipFolderPath>Pawn/Animal/ESCP_Troll/Troll_Angry</clipFolderPath>
+						<clipPath>Pawn/Animal/ESCP_Troll/Troll_Angry</clipPath>
 					</li>
 				</grains>
 				<volumeRange>25~25</volumeRange>
@@ -44,9 +44,9 @@
 		<subSounds>
 			<li>
 				<grains>
-					<li Class="AudioGrain_Folder">
+					<li Class="AudioGrain_Clip">
 						<!-- Bull - SoundBible.com-1252561191 -->
-						<clipFolderPath>Pawn/Animal/ESCP_Troll/Troll_Angry</clipFolderPath>
+						<clipPath>Pawn/Animal/ESCP_Troll/Troll_Angry</clipPath>
 					</li>
 				</grains>
 				<volumeRange>15~15</volumeRange>
@@ -63,9 +63,9 @@
 		<subSounds>
 			<li>
 				<grains>
-					<li Class="AudioGrain_Folder">
+					<li Class="AudioGrain_Clip">
 						<!-- Lion - SoundBible.com-621763115 -->
-						<clipFolderPath>Pawn/Animal/ESCP_Troll/Troll_Death</clipFolderPath>
+						<clipPath>Pawn/Animal/ESCP_Troll/Troll_Death</clipPath>
 					</li>
 				</grains>
 				<volumeRange>20~20</volumeRange>

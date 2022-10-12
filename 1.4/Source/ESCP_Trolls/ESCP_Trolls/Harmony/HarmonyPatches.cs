@@ -73,6 +73,7 @@ namespace ESCP_Trolls
 
     /// <summary>
     /// Limit certain trolls to tiles with specific landmarks
+    /// Currently breaks if Geological Landforms is loaded, but not my problem as that will also breaks pollution animal spawns
     /// </summary>
     [HarmonyPatch(typeof(WildAnimalSpawner))]
     [HarmonyPatch("CommonalityOfAnimalNow")]
@@ -81,38 +82,37 @@ namespace ESCP_Trolls
         [HarmonyPostfix]
         public static void TrollFeatureRequirementsPatch(PawnKindDef def, ref Map ___map, ref float __result)
         {
-            BiomeFeatureRequirements props = BiomeFeatureRequirements.Get(def.race);
-            if (props != null)
+            if (Trolls_ModSettings.TileFeatureRequirement)
             {
-                Log.Message("Checking requirements for: " + def.race.label);
+                BiomeFeatureRequirements props = BiomeFeatureRequirements.Get(def.race);
+                if (props != null)
+                {
                     if (props.requireCaves && !Find.World.HasCaves(___map.Tile))
                     {
-                        Log.Message("Disallowing spawn:  No caves");
                         __result = 0;
                         return;
                     }
                     if (props.requireCoast && !Find.World.CoastDirectionAt(___map.Tile).IsValid)
                     {
-                        Log.Message("Disallowing spawn:  No coast");
                         __result = 0;
                         return;
                     }
                     if (props.requireHills && Find.WorldGrid[___map.Tile].hilliness == Hilliness.Flat)
                     {
-                        Log.Message("Disallowing spawn:  No hills");
                         __result = 0;
                         return;
                     }
-                if (props.requireRiver && Find.WorldGrid[___map.Tile].Rivers == null)
-                {
-                    Log.Message("Disallowing spawn:  No rivers");
-                    __result = 0;
-                    return;
+                    if (props.requireRiver && Find.WorldGrid[___map.Tile].Rivers == null)
+                    {
+                        __result = 0;
+                        return;
+                    }
                 }
             }
         }
     }
-    /* Effectively the same as above, leaving here in case it's needed
+
+    /* Alternative, but ticks fairly frequently
     [HarmonyPatch(typeof(MapTemperature))]
     [HarmonyPatch("SeasonAcceptableFor")]
     public static class MapTemperature_SeasonAcceptableFor_Patch
@@ -120,42 +120,30 @@ namespace ESCP_Trolls
         [HarmonyPostfix]
         public static void TrollFeatureRequirementsPatch(ThingDef animalRace, ref Map ___map, ref bool __result)
         {
-            if (__result)
+            if (__result && Trolls_ModSettings.TileFeatureRequirement)
             {
                 BiomeFeatureRequirements props = BiomeFeatureRequirements.Get(animalRace);
                 if (props != null)
                 {
-                    Log.Message("Checking requirements for: " + animalRace.label);
-                    if (Rand.Chance(props.chanceToRequire))
+                    if (props.requireCaves && !Find.World.HasCaves(___map.Tile))
                     {
-                        if (props.requireCaves && !Find.World.HasCaves(___map.Tile))
-                        {
-                            Log.Message("Disallowing spawn:  No caves");
-                            __result = false;
-                            return;
-                        }
-                        if (props.requireCoast && !Find.World.CoastDirectionAt(___map.Tile).IsValid)
-                        {
-                            Log.Message("Disallowing spawn:  No coast");
-                            __result = false;
-                            return;
-                        }
-                        if (props.requireHills && Find.WorldGrid[___map.Tile].hilliness == Hilliness.Flat)
-                        {
-                            Log.Message("Disallowing spawn:  No hills");
-                            __result = false;
-                            return;
-                        }
-                        if (props.requireRiver && Find.WorldGrid[___map.Tile].Rivers == null)
-                        {
-                            Log.Message("Disallowing spawn:  No rivers");
-                            __result = false;
-                            return;
-                        }
+                        __result = false;
+                        return;
                     }
-                    else
+                    if (props.requireCoast && !Find.World.CoastDirectionAt(___map.Tile).IsValid)
                     {
-                        Log.Message("Disable requirements by random chance");
+                        __result = false;
+                        return;
+                    }
+                    if (props.requireHills && Find.WorldGrid[___map.Tile].hilliness == Hilliness.Flat)
+                    {
+                        __result = false;
+                        return;
+                    }
+                    if (props.requireRiver && Find.WorldGrid[___map.Tile].Rivers == null)
+                    {
+                        __result = false;
+                        return;
                     }
                 }
             }
@@ -174,7 +162,6 @@ namespace ESCP_Trolls
         {
             if (Utility_OnStartup.trollKindDefs.Contains(animalDef))
             {
-                Log.Message("Increasing commonality for: " + animalDef.race.label);
                 __result *= Trolls_ModSettings.TrollCommonalityMult;
             }
         }
