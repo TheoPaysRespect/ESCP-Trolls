@@ -3,7 +3,7 @@
 	<!-- ==========[ESCP_Troll]==========-->
 	<BodyDef>
 		<defName>ESCP_Troll</defName>
-		<label>bipedal with arms and three eyes</label>
+		<label>troll-like with three eyes</label>
 		<corePart>
 			<def>Body</def>
 			<height>Middle</height>
@@ -235,7 +235,7 @@
 	<!-- ==========[MorrowRim_TrollTusked]==========-->
 	<BodyDef>
 		<defName>ESCP_TrollTusked</defName>
-		<label>bipedal with arms, tusks and three eyes</label>
+		<label>troll-like with tusks and two eyes</label>
 		<corePart>
 			<def>Body</def>
 			<height>Middle</height>
@@ -317,11 +317,6 @@
 								<li>
 									<def>Eye</def>
 									<customLabel>right eye</customLabel>
-									<coverage>0.08</coverage>
-								</li>
-								<li>
-									<def>Eye</def>
-									<customLabel>middle eye</customLabel>
 									<coverage>0.08</coverage>
 								</li>
 								<li>
