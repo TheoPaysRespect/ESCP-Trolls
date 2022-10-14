@@ -10,7 +10,7 @@
 	<ESCP_Trolls_ModName>ESCP - Trolls</ESCP_Trolls_ModName>
 	<ESCP_Reset>Reset all settings</ESCP_Reset>
 	
-	<ESCP_Trolls_EnableTrollHuntQuest>Enable the Troll Hunt quest</ESCP_Trolls_EnableTrollHuntQuest>
+	<ESCP_Trolls_EnableTrollHuntQuest>Enable the Afflicted Troll Hunt quest</ESCP_Trolls_EnableTrollHuntQuest>
 	<ESCP_Trolls_EnableAnimaTrollIncident>Enable the Anima Troll wanders in incident</ESCP_Trolls_EnableAnimaTrollIncident>
 	<ESCP_Trolls_TrollCommonalityMult>Multiplier for the spawn rate of trolls</ESCP_Trolls_TrollCommonalityMult>
 	<ESCP_Trolls_TileFeatureRequirement>Enable specific trolls requring specific tile features to spawn</ESCP_Trolls_TileFeatureRequirement>

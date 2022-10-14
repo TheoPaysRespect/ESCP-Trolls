@@ -154,6 +154,30 @@
 		<points>50</points>
 	</AchievementsExpanded.AchievementDef>
 	<!-- ==========[Quests]========== -->
+	<AchievementsExpanded.AchievementDef ParentName="ESCP_AchievementTrolls_Base">
+		<defName>ESCP_AchievementTrolls_TrollHunter</defName>
+		<label>Troll Hunter</label>
+		<description>Successfully complete 10 Afflicted Troll Hunt quests</description>
+		<tracker Class="AchievementsExpanded.QuestTracker">
+			<def>ESCP_AfflictedTrollSite</def>
+			<outcome>Success</outcome>
+			<count>10</count>
+		</tracker>
+		<texPath>Achievements/ESCP_AchievementTrolls_TrollHunter</texPath>
+		<points>15</points>
+	</AchievementsExpanded.AchievementDef>
+	<AchievementsExpanded.AchievementDef ParentName="ESCP_AchievementTrolls_Base">
+		<defName>ESCP_AchievementTrolls_TrollSlayer</defName>
+		<label>Troll Slayer</label>
+		<description>Successfully complete 25 Afflicted Troll Hunt quests</description>
+		<tracker Class="AchievementsExpanded.QuestTracker">
+			<def>ESCP_AfflictedTrollSite</def>
+			<outcome>Success</outcome>
+			<count>25</count>
+		</tracker>
+		<texPath>Achievements/ESCP_AchievementTrolls_TrollSlayer</texPath>
+		<points>25</points>
+	</AchievementsExpanded.AchievementDef>
 	<!-- ==========[Killing]========== -->
 	<AchievementsExpanded.AchievementDef ParentName="ESCP_AchievementTrolls_Base">
 		<defName>ESCP_AchievementTrolls_UdyrfrykteHunter</defName>
@@ -177,17 +201,4 @@
 		<texPath>Achievements/ESCP_AchievementTrolls_GrahlHunter</texPath>
 		<points>50</points>
 	</AchievementsExpanded.AchievementDef>
-	<!--
-	<AchievementsExpanded.AchievementDef ParentName="ESCP_AchievementTrolls_Base">
-		<defName>ESCP_AchievementTrolls_PrimalGrahlHunter</defName>
-		<label>Slayer of the Lightkeeper</label>
-		<description>Successfully hunt a Primal Grahl</description>
-		<tracker Class="AchievementsExpanded.KillTracker">
-			<raceDef>ESCP_TrollGrahlPrimal</raceDef>
-			<count>1</count>
-		</tracker>
-		<texPath>Achievements/ESCP_AchievementTrolls_PrimalGrahlHunter</texPath>
-		<points>25</points>
-	</AchievementsExpanded.AchievementDef>
-	-->
 </Defs>

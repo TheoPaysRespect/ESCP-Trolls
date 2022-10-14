@@ -63,14 +63,19 @@
   <ItemGroup>
     <Compile Include="DefModExtensions\BiomeFeatureRequirements.cs" />
     <Compile Include="DefModExtensions\RaceProperties.cs" />
+    <Compile Include="DefOf\HediffDefOf.cs" />
     <Compile Include="DefOf\PawnKindDefOf.cs" />
     <Compile Include="Harmony\HarmonyPatches.cs" />
-    <Compile Include="HediffComps\HediffCompProperties_Regeneration.cs" />
+    <Compile Include="HediffComps\HediffComp_AfflictedTroll.cs" />
+    <Compile Include="HediffComps\Properties\HediffCompProperties_AfflictedTroll.cs" />
+    <Compile Include="HediffComps\Properties\HediffCompProperties_Regeneration.cs" />
     <Compile Include="HediffComps\HediffComp_Regeneration.cs" />
     <Compile Include="IncidentWorkers\IncidentWorker_AnimaTrollWandersIn.cs" />
     <Compile Include="IncidentWorkers\IncidentWorker_TrollWandersIn.cs" />
     <Compile Include="IngestionOutcomeDoers\IngestionOutcomeDoer_DelayedRegeneration.cs" />
     <Compile Include="IngestionOutcomeDoers\IngestionOutcomeDoer_Regeneration.cs" />
+    <Compile Include="Quests\GenStep\GenStep_AfflictedTroll.cs" />
+    <Compile Include="Quests\SitePartWorker\SitePartWorker_AfflictedTroll.cs" />
     <Compile Include="Utility_OnStartup.cs" />
     <Compile Include="ModSettings\Trolls_Mod.cs" />
     <Compile Include="ModSettings\Trolls_ModSettings.cs" />
@@ -79,9 +84,7 @@
     <Compile Include="ThingComps\Comp_Regeneration.cs" />
     <Compile Include="Utility.cs" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Quests\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <None Include="packages.config" />
   </ItemGroup>

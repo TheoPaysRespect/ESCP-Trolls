@@ -18,4 +18,60 @@
 			<li Class="ESCP_Trolls.HediffCompProperties_Regeneration"/>
 		</comps>
 	</HediffDef>
+
+	<HediffDef>
+		<defName>ESCP_AfflictedTroll</defName>
+		<label>Nirncrux affliction</label>
+		<description>A troll empowered by a strange affliction, making it far more dangerous than others of its kind.</description>
+		<hediffClass>HediffWithComps</hediffClass>
+		<defaultLabelColor>(0.8, 0.6, 1.0)</defaultLabelColor>
+		<makesSickThought>false</makesSickThought>
+		<maxSeverity>1.0</maxSeverity>
+		<isBad>false</isBad>
+		<comps>
+		  <li Class="ESCP_Trolls.HediffCompProperties_AfflictedTroll"/>
+		  <li Class="HediffCompProperties_DisappearsOnDeath"/>
+		</comps>
+		<stages>
+			<li>
+				<painFactor>0</painFactor>
+				<capMods>
+				  <li>
+					<capacity>Sight</capacity>
+					<offset>0.50</offset>
+				  </li>
+				  <li>
+					<capacity>Moving</capacity>
+					<offset>0.50</offset>
+				  </li>
+				  <li>
+					<capacity>Manipulation</capacity>
+					<offset>0.50</offset>
+				  </li>
+				</capMods>
+				<statOffsets>
+					<InjuryHealingFactor>0.5</InjuryHealingFactor>
+					<ToxicResistance>0.5</ToxicResistance>
+					<ArmorRating_Blunt>0.25</ArmorRating_Blunt>
+					<ArmorRating_Sharp>0.25</ArmorRating_Sharp>
+				</statOffsets>
+			</li>
+		</stages>
+	</HediffDef>
+	
+	<HediffDef>
+		<defName>ESCP_AfflictedTrollBattleScar</defName>
+		<label>Battle scar</label>
+		<description>A scar obtained in battle, proof of victory.</description>
+		<hediffClass>Hediff</hediffClass>
+		<defaultLabelColor>(0.8, 0.6, 1.0)</defaultLabelColor>
+		<stages>
+			<li>
+				<statOffsets>
+					<IncomingDamageFactor>-0.02</IncomingDamageFactor>
+				</statOffsets>
+			</li>
+		</stages>
+	</HediffDef>
+	
 </Defs>
