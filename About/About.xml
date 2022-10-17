@@ -3,6 +3,7 @@
 	<name>ESCP - Trolls</name>
 	<packageId>SirMashedPotato.ESCP.Trolls</packageId>
 	<author>SirMashedPotato</author>
+	<modVersion>1.0.0</modVersion>
 	<supportedVersions>
     	<li>1.4</li>
 	</supportedVersions>
@@ -38,6 +39,7 @@
       <li>Ludeon.RimWorld</li>
       <li>Ludeon.RimWorld.Ideology</li>
 	  <li>Ludeon.RimWorld.Royalty</li>
+	  <li>Ludeon.RimWorld.Biotech</li>
 	  <li>vanillaexpanded.achievements</li>
     </loadAfter>
 	<incompatibleWith>

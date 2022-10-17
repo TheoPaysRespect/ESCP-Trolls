@@ -1,0 +1,80 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	<!-- ==========[ESCP_TrollToxi]==========-->
+	<ThingDef ParentName="ESCP_TrollThingBase_TierTwo">
+		<defName>ESCP_TrollToxi</defName>
+		<label>Toxitroll</label>
+		<description>A strange species of troll that can only be found in highly polluted regions. Thought to be mutated Boom Trolls, Toxitrolls also have large sacs on their backs, but unlike Boom Trolls, these sacs are filled with toxic gas.\n\nTrolls are thought to have diverged from apes sometime in the past. Likely a very long time ago, as the only remaining ape-like characteristics are their appearance. Like most other trolls, the Toxitroll is not particularly intelligent, though more than makes up for this in brute strength.\n\nLike all other trollkin, the blood of Toxitrolls possesses strong regenerative abilities, allowing the troll to heal bleeding wounds relatively quickly. This blood may be harvested during butchering, and used to create elixirs of regeneration. If dealing with a particularly aggressive troll, it is best to set it on fire, as this will inhibit their regeneration.</description>
+		<statBases>
+			<ToxicResistance>1</ToxicResistance>
+		</statBases>
+		<race>
+			<deathActionWorkerClass>DeathActionWorker_ToxCloud</deathActionWorkerClass>
+			<baseHealthScale>1.2</baseHealthScale>
+			<useMeatFrom>ESCP_TrollBarren</useMeatFrom>
+			<herdAnimal>true</herdAnimal>
+			<canBePredatorPrey>false</canBePredatorPrey>
+			<wildBiomes>
+				<!-- handled in patch -->
+			</wildBiomes>
+		</race>
+	</ThingDef>
+	<PawnKindDef ParentName="ESCP_TrollKindBase_TierTwo">
+		<defName>ESCP_TrollToxi</defName>
+		<label>Toxitroll</label>
+		<race>ESCP_TrollToxi</race>
+		<wildGroupSize>1~3</wildGroupSize>
+		<lifeStages>
+			<li>
+				<bodyGraphicData>
+					<texPath>Things/Pawn/Animal/ESCP_Troll/ToxiTroll</texPath>
+					<drawSize>1.1</drawSize>
+				</bodyGraphicData>
+				<dessicatedBodyGraphicData>
+					<texPath>Things/Pawn/Animal/ESCP_Troll/Dessicated_Troll</texPath>
+					<drawSize>1.1</drawSize>
+				</dessicatedBodyGraphicData>
+				<corpseGraphicData>
+				  <texPath>Things/Pawn/Animal/ESCP_Troll/ToxiTroll_Corpse</texPath>
+				  <drawSize>1.1</drawSize>
+				</corpseGraphicData>
+			</li>
+			<li>
+				<bodyGraphicData>
+					<texPath>Things/Pawn/Animal/ESCP_Troll/ToxiTroll</texPath>
+					<drawSize>1.5</drawSize>
+					<shadowData>
+						<volume>(0.3, 0.3, 0.3)</volume>
+						<offset>(0,0,-0.3)</offset>
+					</shadowData>
+				</bodyGraphicData>
+				<dessicatedBodyGraphicData>
+					<texPath>Things/Pawn/Animal/ESCP_Troll/Dessicated_Troll</texPath>
+					<drawSize>1.5</drawSize>
+				</dessicatedBodyGraphicData>
+				<corpseGraphicData>
+				  <texPath>Things/Pawn/Animal/ESCP_Troll/ToxiTroll_Corpse</texPath>
+				  <drawSize>1.5</drawSize>
+				</corpseGraphicData>
+			</li>
+			<li>
+				<bodyGraphicData>
+					<texPath>Things/Pawn/Animal/ESCP_Troll/ToxiTroll</texPath>
+					<drawSize>2.2</drawSize>
+					<shadowData>
+						<volume>(0.4, 0.4, 0.4)</volume>
+						<offset>(0,0,-0.1)</offset>
+					</shadowData>
+				</bodyGraphicData>
+				<dessicatedBodyGraphicData>
+					<texPath>Things/Pawn/Animal/ESCP_Troll/Dessicated_Troll</texPath>
+					<drawSize>2.2</drawSize>
+				</dessicatedBodyGraphicData>
+				<corpseGraphicData>
+				  <texPath>Things/Pawn/Animal/ESCP_Troll/ToxiTroll_Corpse</texPath>
+				  <drawSize>2.2</drawSize>
+				</corpseGraphicData>
+			</li>
+		</lifeStages>
+	</PawnKindDef>
+</Defs>
