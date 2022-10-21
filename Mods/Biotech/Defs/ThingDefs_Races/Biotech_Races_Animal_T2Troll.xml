@@ -6,7 +6,7 @@
 		<label>Toxitroll</label>
 		<description>A strange species of troll that can only be found in highly polluted regions. Thought to be mutated Boom Trolls, Toxitrolls also have large sacs on their backs, but unlike Boom Trolls, these sacs are filled with toxic gas.\n\nTrolls are thought to have diverged from apes sometime in the past. Likely a very long time ago, as the only remaining ape-like characteristics are their appearance. Like most other trolls, the Toxitroll is not particularly intelligent, though more than makes up for this in brute strength.\n\nLike all other trollkin, the blood of Toxitrolls possesses strong regenerative abilities, allowing the troll to heal bleeding wounds relatively quickly. This blood may be harvested during butchering, and used to create elixirs of regeneration. If dealing with a particularly aggressive troll, it is best to set it on fire, as this will inhibit their regeneration.</description>
 		<statBases>
-			<ToxicResistance>1</ToxicResistance>
+			<ToxicEnvironmentResistance>1</ToxicEnvironmentResistance>
 		</statBases>
 		<race>
 			<deathActionWorkerClass>DeathActionWorker_ToxCloud</deathActionWorkerClass>
