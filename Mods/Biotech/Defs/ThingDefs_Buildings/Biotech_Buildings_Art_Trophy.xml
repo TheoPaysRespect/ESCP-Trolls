@@ -11,4 +11,15 @@
 			<Corpse_ESCP_TrollToxi>1</Corpse_ESCP_TrollToxi>
 		</costList>
 	</ThingDef>
+	<!-- ==========[ESCP_TrollTophySmall_Haemo]========== -->
+	<ThingDef ParentName="ESCP_TrollTophySmall_Base">
+		<defName>ESCP_TrollTophySmall_Haemo</defName>
+		<label>Haemotroll trophy</label>
+		<graphicData>
+			<texPath>Things/Building/Art/ESCP_TrollTrophy/HaemotrollTrophy</texPath>
+		</graphicData>
+		<costList>
+			<Corpse_ESCP_TrollHaemo>1</Corpse_ESCP_TrollHaemo>
+		</costList>
+	</ThingDef>
 </Defs>

@@ -25,6 +25,7 @@
 						<li>ESCP_TrollCave</li>
 						<li>ESCP_TrollAnima</li>
 						<li MayRequire="Ludeon.RimWorld.Biotech">ESCP_TrollToxi</li>
+						<li MayRequire="Ludeon.RimWorld.Biotech">ESCP_TrollHaemo</li>
 					</value>
 				</li>
 				<li Class="PatchOperationAdd">
@@ -46,6 +47,7 @@
 						<li>ESCP_TrollCave</li>
 						<li>ESCP_TrollAnima</li>
 						<li MayRequire="Ludeon.RimWorld.Biotech">ESCP_TrollToxi</li>
+						<li MayRequire="Ludeon.RimWorld.Biotech">ESCP_TrollHaemo</li>
 					</value>
 				</li>
 				<li Class="PatchOperationAdd">
@@ -67,6 +69,7 @@
 						<li>ESCP_TrollCave</li>
 						<li>ESCP_TrollAnima</li>
 						<li MayRequire="Ludeon.RimWorld.Biotech">ESCP_TrollToxi</li>
+						<li MayRequire="Ludeon.RimWorld.Biotech">ESCP_TrollHaemo</li>
 					</value>
 				</li>
 				<li Class="PatchOperationAdd">
@@ -88,6 +91,7 @@
 						<li>ESCP_TrollCave</li>
 						<li>ESCP_TrollAnima</li>
 						<li MayRequire="Ludeon.RimWorld.Biotech">ESCP_TrollToxi</li>
+						<li MayRequire="Ludeon.RimWorld.Biotech">ESCP_TrollHaemo</li>
 					</value>
 				</li>
 				<li Class="PatchOperationAdd">
@@ -109,6 +113,7 @@
 						<li>ESCP_TrollCave</li>
 						<li>ESCP_TrollAnima</li>
 						<li MayRequire="Ludeon.RimWorld.Biotech">ESCP_TrollToxi</li>
+						<li MayRequire="Ludeon.RimWorld.Biotech">ESCP_TrollHaemo</li>
 					</value>
 				</li>
 			</operations>

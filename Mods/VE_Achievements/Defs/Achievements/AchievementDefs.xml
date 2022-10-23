@@ -97,6 +97,10 @@
 					<key>ESCP_TrollToxi</key>
 					<value>1</value>
 				</li>
+				<li MayRequire="Ludeon.RimWorld.Biotech">
+					<key>ESCP_TrollHaemo</key>
+					<value>1</value>
+				</li>
 			</kindDefs>
 		</tracker>
 		<texPath>Achievements/ESCP_AchievementTrolls_TamerStrange</texPath>
