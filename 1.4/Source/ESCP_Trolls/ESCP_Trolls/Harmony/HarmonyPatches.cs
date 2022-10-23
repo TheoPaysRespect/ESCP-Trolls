@@ -3,15 +3,7 @@ using RimWorld;
 using RimWorld.Planet;
 using System.Reflection;
 using Verse;
-using System;
-using System.Linq;
 using System.Collections.Generic;
-using Verse.AI;
-using Verse.AI.Group;
-using System.Text;
-using UnityEngine;
-using RimWorld.QuestGen;
-using Verse.Grammar;
 
 namespace ESCP_Trolls
 {
