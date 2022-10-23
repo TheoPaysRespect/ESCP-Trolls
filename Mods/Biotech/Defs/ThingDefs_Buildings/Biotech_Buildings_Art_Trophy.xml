@@ -14,7 +14,7 @@
 	<!-- ==========[ESCP_TrollTophySmall_Haemo]========== -->
 	<ThingDef ParentName="ESCP_TrollTophySmall_Base">
 		<defName>ESCP_TrollTophySmall_Haemo</defName>
-		<label>Haemotroll trophy</label>
+		<label>Hemotroll trophy</label>
 		<graphicData>
 			<texPath>Things/Building/Art/ESCP_TrollTrophy/HaemotrollTrophy</texPath>
 		</graphicData>

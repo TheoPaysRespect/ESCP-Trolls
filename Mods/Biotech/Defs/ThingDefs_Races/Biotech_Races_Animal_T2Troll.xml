@@ -80,8 +80,8 @@
 	<!-- ==========[ESCP_TrollHaemo]==========-->
 	<ThingDef ParentName="ESCP_TrollThingBase_TierTwo">
 		<defName>ESCP_TrollHaemo</defName>
-		<label>Haemotroll</label>
-		<description>A strange species of troll usually found in colder climates, and almost exclusively near caves. The Haemotroll appears to be the result of intensive genetic modification, possibly as an attempt to make a sanguophages troll. The resulting creation was not a troll that feeds on haemogen, but instead a troll that produces large quantities of it, which is stored in a large growth on its back.\n\nTrolls are thought to have diverged from apes sometime in the past. Likely a very long time ago, as the only remaining ape-like characteristics are their appearance. Like most other trolls, the Haemotroll is not particularly intelligent, though more than makes up for this in brute strength.\n\nLike all other trollkin, the blood of Haemotrolls possesses strong regenerative abilities, allowing the troll to heal bleeding wounds relatively quickly. This blood may be harvested during butchering, and used to create elixirs of regeneration. If dealing with a particularly aggressive troll, it is best to set it on fire, as this will inhibit their regeneration.</description>
+		<label>Hemotroll</label>
+		<description>A strange species of troll usually found in colder climates, and almost exclusively near caves. The Hemotroll appears to be the result of intensive genetic modification, possibly as an attempt to make a sanguophages troll. The resulting creation was not a troll that feeds on haemogen, but instead a troll that produces large quantities of it, which is stored in a large growth on its back.\n\nTrolls are thought to have diverged from apes sometime in the past. Likely a very long time ago, as the only remaining ape-like characteristics are their appearance. Like most other trolls, the Hemotroll is not particularly intelligent, though more than makes up for this in brute strength.\n\nLike all other trollkin, the blood of Hemotrolls possesses strong regenerative abilities, allowing the troll to heal bleeding wounds relatively quickly. This blood may be harvested during butchering, and used to create elixirs of regeneration. If dealing with a particularly aggressive troll, it is best to set it on fire, as this will inhibit their regeneration.</description>
 		<modExtensions>
 			<li Class="ESCP_Trolls.BiomeFeatureRequirements">
 				<requireCaves>True</requireCaves>
@@ -124,12 +124,12 @@
 	</ThingDef>
 	<PawnKindDef ParentName="ESCP_TrollKindBase_TierTwo">
 		<defName>ESCP_TrollHaemo</defName>
-		<label>Haemotroll</label>
+		<label>Hemotroll</label>
 		<race>ESCP_TrollHaemo</race>
 		<lifeStages>
 			<li>
 				<bodyGraphicData>
-					<texPath>Things/Pawn/Animal/ESCP_Troll/Haemotroll</texPath>
+					<texPath>Things/Pawn/Animal/ESCP_Troll/Hemotroll</texPath>
 					<drawSize>1.1</drawSize>
 				</bodyGraphicData>
 				<dessicatedBodyGraphicData>
@@ -137,13 +137,13 @@
 					<drawSize>1.1</drawSize>
 				</dessicatedBodyGraphicData>
 				<corpseGraphicData>
-				  <texPath>Things/Pawn/Animal/ESCP_Troll/Haemotroll_Corpse</texPath>
+				  <texPath>Things/Pawn/Animal/ESCP_Troll/Hemotroll_Corpse</texPath>
 				  <drawSize>1.1</drawSize>
 				</corpseGraphicData>
 			</li>
 			<li>
 				<bodyGraphicData>
-					<texPath>Things/Pawn/Animal/ESCP_Troll/Haemotroll</texPath>
+					<texPath>Things/Pawn/Animal/ESCP_Troll/Hemotroll</texPath>
 					<drawSize>1.5</drawSize>
 					<shadowData>
 						<volume>(0.3, 0.3, 0.3)</volume>
@@ -155,13 +155,13 @@
 					<drawSize>1.5</drawSize>
 				</dessicatedBodyGraphicData>
 				<corpseGraphicData>
-				  <texPath>Things/Pawn/Animal/ESCP_Troll/Haemotroll_Corpse</texPath>
+				  <texPath>Things/Pawn/Animal/ESCP_Troll/Hemotroll_Corpse</texPath>
 				  <drawSize>1.5</drawSize>
 				</corpseGraphicData>
 			</li>
 			<li>
 				<bodyGraphicData>
-					<texPath>Things/Pawn/Animal/ESCP_Troll/Haemotroll</texPath>
+					<texPath>Things/Pawn/Animal/ESCP_Troll/Hemotroll</texPath>
 					<drawSize>2.2</drawSize>
 					<shadowData>
 						<volume>(0.4, 0.4, 0.4)</volume>
@@ -173,7 +173,7 @@
 					<drawSize>2.2</drawSize>
 				</dessicatedBodyGraphicData>
 				<corpseGraphicData>
-				  <texPath>Things/Pawn/Animal/ESCP_Troll/Haemotroll_Corpse</texPath>
+				  <texPath>Things/Pawn/Animal/ESCP_Troll/Hemotroll_Corpse</texPath>
 				  <drawSize>2.2</drawSize>
 				</corpseGraphicData>
 			</li>
