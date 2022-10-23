@@ -129,7 +129,7 @@
 		<lifeStages>
 			<li>
 				<bodyGraphicData>
-					<texPath>Things/Pawn/Animal/ESCP_Troll/Hemotroll</texPath>
+					<texPath>Things/Pawn/Animal/ESCP_Troll/Haemotroll</texPath>
 					<drawSize>1.1</drawSize>
 				</bodyGraphicData>
 				<dessicatedBodyGraphicData>
@@ -137,13 +137,13 @@
 					<drawSize>1.1</drawSize>
 				</dessicatedBodyGraphicData>
 				<corpseGraphicData>
-				  <texPath>Things/Pawn/Animal/ESCP_Troll/Hemotroll_Corpse</texPath>
+				  <texPath>Things/Pawn/Animal/ESCP_Troll/Haemotroll_Corpse</texPath>
 				  <drawSize>1.1</drawSize>
 				</corpseGraphicData>
 			</li>
 			<li>
 				<bodyGraphicData>
-					<texPath>Things/Pawn/Animal/ESCP_Troll/Hemotroll</texPath>
+					<texPath>Things/Pawn/Animal/ESCP_Troll/Haemotroll</texPath>
 					<drawSize>1.5</drawSize>
 					<shadowData>
 						<volume>(0.3, 0.3, 0.3)</volume>
@@ -155,13 +155,13 @@
 					<drawSize>1.5</drawSize>
 				</dessicatedBodyGraphicData>
 				<corpseGraphicData>
-				  <texPath>Things/Pawn/Animal/ESCP_Troll/Hemotroll_Corpse</texPath>
+				  <texPath>Things/Pawn/Animal/ESCP_Troll/Haemotroll_Corpse</texPath>
 				  <drawSize>1.5</drawSize>
 				</corpseGraphicData>
 			</li>
 			<li>
 				<bodyGraphicData>
-					<texPath>Things/Pawn/Animal/ESCP_Troll/Hemotroll</texPath>
+					<texPath>Things/Pawn/Animal/ESCP_Troll/Haemotroll</texPath>
 					<drawSize>2.2</drawSize>
 					<shadowData>
 						<volume>(0.4, 0.4, 0.4)</volume>
@@ -173,7 +173,7 @@
 					<drawSize>2.2</drawSize>
 				</dessicatedBodyGraphicData>
 				<corpseGraphicData>
-				  <texPath>Things/Pawn/Animal/ESCP_Troll/Hemotroll_Corpse</texPath>
+				  <texPath>Things/Pawn/Animal/ESCP_Troll/Haemotroll_Corpse</texPath>
 				  <drawSize>2.2</drawSize>
 				</corpseGraphicData>
 			</li>
