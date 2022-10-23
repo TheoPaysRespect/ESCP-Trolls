@@ -19,11 +19,12 @@
 						<li>ESCP_TrollRiver</li>
 						<li>ESCP_TrollGrahl</li>
 						<li>ESCP_TrollUdyrfrykte</li>
-						<li>ESCP_TrollGehenoth</li>
 						<li>ESCP_TrollFungal</li>
-						<li>ESCP_TrollBoomer</li>
+						<li>ESCP_TrollBoom</li>
+						<li>ESCP_TrollCoastal</li>
 						<li>ESCP_TrollCave</li>
 						<li>ESCP_TrollAnima</li>
+						<li MayRequire="Ludeon.RimWorld.Biotech">ESCP_TrollToxi</li>
 					</value>
 				</li>
 				<li Class="PatchOperationAdd">
@@ -39,11 +40,12 @@
 						<li>ESCP_TrollRiver</li>
 						<li>ESCP_TrollGrahl</li>
 						<li>ESCP_TrollUdyrfrykte</li>
-						<li>ESCP_TrollGehenoth</li>
 						<li>ESCP_TrollFungal</li>
-						<li>ESCP_TrollBoomer</li>
+						<li>ESCP_TrollBoom</li>
+						<li>ESCP_TrollCoastal</li>
 						<li>ESCP_TrollCave</li>
 						<li>ESCP_TrollAnima</li>
+						<li MayRequire="Ludeon.RimWorld.Biotech">ESCP_TrollToxi</li>
 					</value>
 				</li>
 				<li Class="PatchOperationAdd">
@@ -59,11 +61,12 @@
 						<li>ESCP_TrollRiver</li>
 						<li>ESCP_TrollGrahl</li>
 						<li>ESCP_TrollUdyrfrykte</li>
-						<li>ESCP_TrollGehenoth</li>
 						<li>ESCP_TrollFungal</li>
-						<li>ESCP_TrollBoomer</li>
+						<li>ESCP_TrollBoom</li>
+						<li>ESCP_TrollCoastal</li>
 						<li>ESCP_TrollCave</li>
 						<li>ESCP_TrollAnima</li>
+						<li MayRequire="Ludeon.RimWorld.Biotech">ESCP_TrollToxi</li>
 					</value>
 				</li>
 				<li Class="PatchOperationAdd">
@@ -79,11 +82,12 @@
 						<li>ESCP_TrollRiver</li>
 						<li>ESCP_TrollGrahl</li>
 						<li>ESCP_TrollUdyrfrykte</li>
-						<li>ESCP_TrollGehenoth</li>
 						<li>ESCP_TrollFungal</li>
-						<li>ESCP_TrollBoomer</li>
+						<li>ESCP_TrollBoom</li>
+						<li>ESCP_TrollCoastal</li>
 						<li>ESCP_TrollCave</li>
 						<li>ESCP_TrollAnima</li>
+						<li MayRequire="Ludeon.RimWorld.Biotech">ESCP_TrollToxi</li>
 					</value>
 				</li>
 				<li Class="PatchOperationAdd">
@@ -99,11 +103,12 @@
 						<li>ESCP_TrollRiver</li>
 						<li>ESCP_TrollGrahl</li>
 						<li>ESCP_TrollUdyrfrykte</li>
-						<li>ESCP_TrollGehenoth</li>
 						<li>ESCP_TrollFungal</li>
-						<li>ESCP_TrollBoomer</li>
+						<li>ESCP_TrollBoom</li>
+						<li>ESCP_TrollCoastal</li>
 						<li>ESCP_TrollCave</li>
 						<li>ESCP_TrollAnima</li>
+						<li MayRequire="Ludeon.RimWorld.Biotech">ESCP_TrollToxi</li>
 					</value>
 				</li>
 			</operations>
