@@ -332,6 +332,7 @@
 			<body>ESCP_TrollTusked</body>
 			<useMeatFrom>ESCP_TrollBarren</useMeatFrom>
 			<trainability>Advanced</trainability>
+			<packAnimal>true</packAnimal>
 			<wildBiomes>
 				<TemperateForest>0.02</TemperateForest>
 				<TemperateSwamp>0.02</TemperateSwamp>

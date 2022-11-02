@@ -21,6 +21,7 @@
 			<maxPreyBodySize>0.4</maxPreyBodySize>
 			<foodType>OmnivoreAnimal</foodType>
 			<meatLabel>troll meat</meatLabel>
+			<packAnimal>true</packAnimal>
 			<wildBiomes>
 				<!-- Vanilla -->
 				<AridShrubland>0.07</AridShrubland>
@@ -101,6 +102,7 @@
 		</statBases>
 		<race>
 			<useMeatFrom>ESCP_TrollBarren</useMeatFrom>
+			<packAnimal>true</packAnimal>
 			<wildBiomes>
 				<TemperateForest>0.07</TemperateForest>
 				<BorealForest>0.07</BorealForest>
@@ -178,6 +180,7 @@
 			<herdAnimal>true</herdAnimal>
 			<maxPreyBodySize>1.2</maxPreyBodySize>
 			<baseBodySize>0.8</baseBodySize>
+			<packAnimal>true</packAnimal>
 			<wildBiomes>
 				<TropicalRainforest>0.07</TropicalRainforest>
 				<TropicalSwamp>0.07</TropicalSwamp>
@@ -254,6 +257,7 @@
 		</statBases>
 		<race>
 			<useMeatFrom>ESCP_TrollBarren</useMeatFrom>
+			<packAnimal>true</packAnimal>
 			<wildBiomes>
 				<TemperateSwamp>0.07</TemperateSwamp>
 				<ColdBog>0.07</ColdBog>

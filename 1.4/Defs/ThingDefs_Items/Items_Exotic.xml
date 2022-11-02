@@ -52,8 +52,8 @@
 	<!-- ==========[ESCP_UderfrykteTusk]==========-->
 	<ThingDef ParentName="ResourceVerbBase">
 		<defName>ESCP_UderfrykteTusk</defName>
-		<label>uderfrykte tusk</label>
-		<description>An uderfrykte's tusk. It is very durable and valuable, and works reasonably well as a weapon.</description>
+		<label>udyrfrykte  tusk</label>
+		<description>An udyrfrykte 's tusk. It is very durable and valuable, and works reasonably well as a weapon.</description>
 		<graphicData>
 			<texPath>Things/Item/Special/ESCP_UderfrykteTusk</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
