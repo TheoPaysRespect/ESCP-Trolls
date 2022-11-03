@@ -159,7 +159,7 @@
 			<baseHealthScale>1.7</baseHealthScale>
 			<leatherDef>ESCP_Leather_LightTroll</leatherDef>
 			<gestationPeriodDays>26</gestationPeriodDays>
-			<lifeExpectancy>13</lifeExpectancy>
+			<lifeExpectancy>40</lifeExpectancy>
 		</race>
 		<butcherProducts>
 			<ESCP_TrollBlood>5</ESCP_TrollBlood>

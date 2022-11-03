@@ -122,7 +122,8 @@
 			<baseHealthScale>3.8</baseHealthScale>
 			<leatherDef>ESCP_Leather_Grahl</leatherDef>
 			<gestationPeriodDays>29</gestationPeriodDays>
-			<lifeExpectancy>16</lifeExpectancy>
+			<lifeExpectancy>80</lifeExpectancy>
+			<packAnimal>true</packAnimal>
 			<wildBiomes>
 				<Tundra>0.03</Tundra>
 				<IceSheet>0.05</IceSheet>
@@ -332,6 +333,7 @@
 			<body>ESCP_TrollTusked</body>
 			<useMeatFrom>ESCP_TrollBarren</useMeatFrom>
 			<trainability>Advanced</trainability>
+			<lifeExpectancy>60</lifeExpectancy>
 			<packAnimal>true</packAnimal>
 			<wildBiomes>
 				<TemperateForest>0.02</TemperateForest>
