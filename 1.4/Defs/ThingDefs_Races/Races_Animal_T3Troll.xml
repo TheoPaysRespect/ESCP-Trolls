@@ -363,6 +363,8 @@
 				<ZBiome_GlacialShield MayRequire="zylle.MoreVanillaBiomes">0.02</ZBiome_GlacialShield>
 				<!-- Winter taiga -->
 				<WinterTaiga MayRequire="reel.FrozenForest">0.02</WinterTaiga>
+				<!-- Medieval Overhaul -->
+				<DankPyon_DarkForest MayRequire="DankPyon.Medieval.Overhaul">0.01</DankPyon_DarkForest>
 			</wildBiomes>
 			<!-- Inherit="False" for the sound patch mod -->
 			<lifeStageAges Inherit="false">

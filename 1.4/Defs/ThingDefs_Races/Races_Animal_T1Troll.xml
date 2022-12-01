@@ -117,6 +117,8 @@
 				<ZBiome_CloudForest MayRequire="zylle.MoreVanillaBiomes">0.07</ZBiome_CloudForest>
 				<!-- Winter taiga -->
 				<WinterTaiga MayRequire="reel.FrozenForest">0.05</WinterTaiga>
+				<!-- Medieval Overhaul -->
+				<DankPyon_DarkForest MayRequire="DankPyon.Medieval.Overhaul">0.06</DankPyon_DarkForest>
 			</wildBiomes>
 		</race>
 	</ThingDef>

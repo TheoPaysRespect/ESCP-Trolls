@@ -117,6 +117,8 @@
 				<!-- Alpha Biomes -->
 				<AB_GallatrossGraveyard MayRequire="sarg.alphabiomes">0.03</AB_GallatrossGraveyard>
 				<AB_TarPits MayRequire="sarg.alphabiomes">0.03</AB_TarPits>
+				<!-- Medieval Overhaul -->
+				<DankPyon_DarkForest MayRequire="DankPyon.Medieval.Overhaul">0.03</DankPyon_DarkForest>
 			</wildBiomes>
 		</race>
 	</ThingDef>
@@ -196,6 +198,8 @@
 				<ZBiome_CoastalDunes MayRequire="zylle.MoreVanillaBiomes">0.03</ZBiome_CoastalDunes>
 				<!-- Advanced Biomes -->
 				<Wetland MayRequire="Mlie.AdvancedBiomes">0.07</Wetland>
+				<!-- Medieval Overhaul -->
+				<DankPyon_DarkForest MayRequire="DankPyon.Medieval.Overhaul">0.03</DankPyon_DarkForest>
 			</wildBiomes>
 		</race>
 	</ThingDef>
@@ -281,6 +285,8 @@
 				<ZBiome_GlacialShield MayRequire="zylle.MoreVanillaBiomes">0.05</ZBiome_GlacialShield>
 				<!-- Winter taiga -->
 				<WinterTaiga MayRequire="reel.FrozenForest">0.04</WinterTaiga>
+				<!-- Medieval Overhaul -->
+				<DankPyon_DarkForest MayRequire="DankPyon.Medieval.Overhaul">0.03</DankPyon_DarkForest>
 			</wildBiomes>
 		</race>
 	</ThingDef>
@@ -369,6 +375,8 @@
 				<ZBiome_CoastalDunes MayRequire="zylle.MoreVanillaBiomes">0.07</ZBiome_CoastalDunes>
 				<!-- Winter taiga -->
 				<WinterTaiga MayRequire="reel.FrozenForest">0.05</WinterTaiga>
+				<!-- Medieval Overhaul -->
+				<DankPyon_DarkForest MayRequire="DankPyon.Medieval.Overhaul">0.03</DankPyon_DarkForest>
 			</wildBiomes>
 		</race>
 	</ThingDef>
