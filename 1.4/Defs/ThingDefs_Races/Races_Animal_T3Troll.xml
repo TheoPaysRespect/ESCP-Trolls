@@ -365,6 +365,8 @@
 				<WinterTaiga MayRequire="reel.FrozenForest">0.02</WinterTaiga>
 				<!-- Medieval Overhaul -->
 				<DankPyon_DarkForest MayRequire="DankPyon.Medieval.Overhaul">0.01</DankPyon_DarkForest>
+				<!-- Biome Expansion - Redwood forest -->
+				<RedwoodForest MayRequire="kikohi.BERF">0.01</RedwoodForest>
 			</wildBiomes>
 			<!-- Inherit="False" for the sound patch mod -->
 			<lifeStageAges Inherit="false">

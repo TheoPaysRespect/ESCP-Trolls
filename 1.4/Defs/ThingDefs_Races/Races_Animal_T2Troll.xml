@@ -31,6 +31,8 @@
 				<WinterTaiga MayRequire="reel.FrozenForest">0.07</WinterTaiga>
 				<!-- Alpha Biomes -->
 				<AB_PropaneLakes MayRequire="sarg.alphabiomes">0.04</AB_PropaneLakes>
+				<!-- Biome Expansion - Redwood forest -->
+				<RedwoodForest MayRequire="kikohi.BERF">0.04</RedwoodForest>
 			</wildBiomes>
 		</race>
 	</ThingDef>
@@ -119,6 +121,8 @@
 				<AB_TarPits MayRequire="sarg.alphabiomes">0.03</AB_TarPits>
 				<!-- Medieval Overhaul -->
 				<DankPyon_DarkForest MayRequire="DankPyon.Medieval.Overhaul">0.03</DankPyon_DarkForest>
+				<!-- Biome Expansion - Redwood forest -->
+				<RedwoodForest MayRequire="kikohi.BERF">0.03</RedwoodForest>
 			</wildBiomes>
 		</race>
 	</ThingDef>
@@ -200,6 +204,8 @@
 				<Wetland MayRequire="Mlie.AdvancedBiomes">0.07</Wetland>
 				<!-- Medieval Overhaul -->
 				<DankPyon_DarkForest MayRequire="DankPyon.Medieval.Overhaul">0.03</DankPyon_DarkForest>
+				<!-- Biome Expansion - Redwood forest -->
+				<RedwoodForest MayRequire="kikohi.BERF">0.03</RedwoodForest>
 			</wildBiomes>
 		</race>
 	</ThingDef>
@@ -287,6 +293,8 @@
 				<WinterTaiga MayRequire="reel.FrozenForest">0.04</WinterTaiga>
 				<!-- Medieval Overhaul -->
 				<DankPyon_DarkForest MayRequire="DankPyon.Medieval.Overhaul">0.03</DankPyon_DarkForest>
+				<!-- Biome Expansion - Redwood forest -->
+				<RedwoodForest MayRequire="kikohi.BERF">0.03</RedwoodForest>
 			</wildBiomes>
 		</race>
 	</ThingDef>
@@ -377,6 +385,8 @@
 				<WinterTaiga MayRequire="reel.FrozenForest">0.05</WinterTaiga>
 				<!-- Medieval Overhaul -->
 				<DankPyon_DarkForest MayRequire="DankPyon.Medieval.Overhaul">0.03</DankPyon_DarkForest>
+				<!-- Biome Expansion - Redwood forest -->
+				<RedwoodForest MayRequire="kikohi.BERF">0.03</RedwoodForest>
 			</wildBiomes>
 		</race>
 	</ThingDef>
