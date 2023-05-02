@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Biotech</li>
+		</mods>
+		<match Class="PatchOperationAdd">
+			<xpath>Defs/AchievementsExpanded.AchievementDef[defName = "ESCP_AchievementTrolls_TamerStrange"]/tracker/kindDefs</xpath>
+			<value>
+				<li>
+					<key>ESCP_TrollToxi</key>
+					<value>1</value>
+				</li>
+				<li>
+					<key>ESCP_TrollHaemo</key>
+					<value>1</value>
+				</li>
+			</value>
+		</match>
+	</Operation>
+</Patch>
