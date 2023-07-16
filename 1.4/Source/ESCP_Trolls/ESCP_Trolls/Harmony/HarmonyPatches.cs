@@ -65,7 +65,6 @@ namespace ESCP_Trolls
 
     /// <summary>
     /// Limit certain trolls to tiles with specific landmarks
-    /// Currently breaks if Geological Landforms is loaded, but not my problem as that will also breaks pollution animal spawns
     /// </summary>
     [HarmonyPatch(typeof(WildAnimalSpawner))]
     [HarmonyPatch("CommonalityOfAnimalNow")]
@@ -104,44 +103,6 @@ namespace ESCP_Trolls
         }
     }
 
-    /* Alternative, but ticks fairly frequently
-    [HarmonyPatch(typeof(MapTemperature))]
-    [HarmonyPatch("SeasonAcceptableFor")]
-    public static class MapTemperature_SeasonAcceptableFor_Patch
-    {
-        [HarmonyPostfix]
-        public static void TrollFeatureRequirementsPatch(ThingDef animalRace, ref Map ___map, ref bool __result)
-        {
-            if (__result && Trolls_ModSettings.TileFeatureRequirement)
-            {
-                BiomeFeatureRequirements props = BiomeFeatureRequirements.Get(animalRace);
-                if (props != null)
-                {
-                    if (props.requireCaves && !Find.World.HasCaves(___map.Tile))
-                    {
-                        __result = false;
-                        return;
-                    }
-                    if (props.requireCoast && !Find.World.CoastDirectionAt(___map.Tile).IsValid)
-                    {
-                        __result = false;
-                        return;
-                    }
-                    if (props.requireHills && Find.WorldGrid[___map.Tile].hilliness == Hilliness.Flat)
-                    {
-                        __result = false;
-                        return;
-                    }
-                    if (props.requireRiver && Find.WorldGrid[___map.Tile].Rivers == null)
-                    {
-                        __result = false;
-                        return;
-                    }
-                }
-            }
-        }
-    }
-    */
     /// <summary>
     /// Modifies the commonality of trolls based on a slider in the settings window
     /// </summary>
