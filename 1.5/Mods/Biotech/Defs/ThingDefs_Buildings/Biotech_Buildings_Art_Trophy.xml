@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	<!-- ==========[ESCP_TrollTophySmall_Toxi]========== -->
+	<ThingDef ParentName="ESCP_TrollTophySmall_Base">
+		<defName>ESCP_TrollTophySmall_Toxi</defName>
+		<label>toxitroll trophy</label>
+		<graphicData>
+			<texPath>Things/Building/Art/ESCP_TrollTrophy/ToxitrollTrophy</texPath>
+		</graphicData>
+		<costList>
+			<Corpse_ESCP_TrollToxi>1</Corpse_ESCP_TrollToxi>
+		</costList>
+	</ThingDef>
+	<!-- ==========[ESCP_TrollTophySmall_Haemo]========== -->
+	<ThingDef ParentName="ESCP_TrollTophySmall_Base">
+		<defName>ESCP_TrollTophySmall_Haemo</defName>
+		<label>Hemotroll trophy</label>
+		<graphicData>
+			<texPath>Things/Building/Art/ESCP_TrollTrophy/HaemotrollTrophy</texPath>
+		</graphicData>
+		<costList>
+			<Corpse_ESCP_TrollHaemo>1</Corpse_ESCP_TrollHaemo>
+		</costList>
+	</ThingDef>
+</Defs>

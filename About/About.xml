@@ -4,8 +4,10 @@
 	<packageId>SirMashedPotato.ESCP.Trolls</packageId>
 	<author>SirMashedPotato</author>
 	<modVersion>1.0.10</modVersion>
+	<modIconPath IgnoreIfNoMatchingField="True">UI/ESCp_Trolls_ModIcon</modIconPath>
 	<supportedVersions>
     	<li>1.4</li>
+    	<li>1.5</li>
 	</supportedVersions>
 	<description>A re-released version of MorrowRim Trolls. Do not upgrade to this version mid save. Or do if you want, just don't complain to me after you do.
 	
@@ -40,7 +42,6 @@
       <li>Ludeon.RimWorld.Ideology</li>
 	  <li>Ludeon.RimWorld.Royalty</li>
 	  <li>Ludeon.RimWorld.Biotech</li>
-	  <li>vanillaexpanded.achievements</li>
     </loadAfter>
 	<incompatibleWith>
 		<li>SirMashedPotato.MorrowRim.Trolls</li>
