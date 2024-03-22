@@ -3,6 +3,7 @@
 	<Operation Class="PatchOperationAdd">
 		<xpath>Defs/BiomeDef/pollutionWildAnimals</xpath>
 		<value>
+			<ESCP_TrollGlowing>0.07</ESCP_TrollGlowing>
 			<ESCP_TrollToxi>0.05</ESCP_TrollToxi>
 		</value>
 	</Operation>

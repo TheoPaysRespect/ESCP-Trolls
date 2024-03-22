@@ -315,11 +315,6 @@
 		<defName>ESCP_TrollFungal</defName>
 		<label>fungal troll</label>
 		<description>A strange species of troll, that is found almost solely in the ashlands. The fungal troll appears to be a sub-species of the barren troll, that has adapted specifically for life in the ashlands. Fungal trolls have a symbiotic relationship with certain species of fungus, which can often be found growing on the trolls back.\n\nTrolls are thought to have diverged from apes sometime in the past. Likely a very long time ago, as the only remaining ape-like characteristics are their appearance. Like most other trolls, the barren troll is not particularly intelligent, though more than makes up for this in brute strength.\n\nLike all other trollkin, the blood of fungal trolls possesses strong regenerative abilities, allowing the troll to heal bleeding wounds relatively quickly. This blood may be harvested during butchering, and used to create elixirs of regeneration. If dealing with a particularly aggressive troll, it is best to set it on fire, as this will inhibit their regeneration.</description>
-		<modExtensions>
-			<li Class="MorrowRim.ExtendedRaceProperties" MayRequire="SirMashedPotato.MorrowRim">
-				<ashResistant>Resistant</ashResistant>
-			</li>
-		</modExtensions>
 		<statBases>
 			<ComfyTemperatureMin>-15</ComfyTemperatureMin>
 			<ComfyTemperatureMax>50</ComfyTemperatureMax>
