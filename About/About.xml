@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <ModMetaData>
 	<name>ESCP - Trolls</name>
-	<packageId>ESCP.ESCP.Trolls</packageId>
+	<packageId>ESCP.Trolls</packageId>
 	<author>ESCP</author>
 	<modVersion>1.0.10</modVersion>
 	<modIconPath IgnoreIfNoMatchingField="True">UI/ESCp_Trolls_ModIcon</modIconPath>
