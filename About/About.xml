@@ -2,7 +2,7 @@
 <ModMetaData>
 	<name>ESCP - Trolls</name>
 	<packageId>ESCP.Trolls</packageId>
-	<author>ESCP</author>
+	<author>SirMashedPotato, theo</author>
 	<modVersion>1.0.10</modVersion>
 	<modIconPath IgnoreIfNoMatchingField="True">UI/ESCp_Trolls_ModIcon</modIconPath>
 	<supportedVersions>
