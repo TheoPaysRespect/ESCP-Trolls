@@ -27,7 +27,7 @@
 		<lifeStages>
 			<li>
 				<bodyGraphicData>
-					<texPath>Things/Pawn/Animal/ESCP_Troll/ToxiTroll</texPath>
+					<texPath>Things/Pawn/Animal/ESCP_Troll/Toxitroll</texPath>
 					<drawSize>1.1</drawSize>
 				</bodyGraphicData>
 				<dessicatedBodyGraphicData>
@@ -35,13 +35,13 @@
 					<drawSize>1.1</drawSize>
 				</dessicatedBodyGraphicData>
 				<corpseGraphicData>
-				  <texPath>Things/Pawn/Animal/ESCP_Troll/ToxiTroll_Corpse</texPath>
+				  <texPath>Things/Pawn/Animal/ESCP_Troll/Toxitroll_Corpse</texPath>
 				  <drawSize>1.1</drawSize>
 				</corpseGraphicData>
 			</li>
 			<li>
 				<bodyGraphicData>
-					<texPath>Things/Pawn/Animal/ESCP_Troll/ToxiTroll</texPath>
+					<texPath>Things/Pawn/Animal/ESCP_Troll/Toxitroll</texPath>
 					<drawSize>1.5</drawSize>
 					<shadowData>
 						<volume>(0.3, 0.3, 0.3)</volume>
@@ -53,13 +53,13 @@
 					<drawSize>1.5</drawSize>
 				</dessicatedBodyGraphicData>
 				<corpseGraphicData>
-				  <texPath>Things/Pawn/Animal/ESCP_Troll/ToxiTroll_Corpse</texPath>
+				  <texPath>Things/Pawn/Animal/ESCP_Troll/Toxitroll_Corpse</texPath>
 				  <drawSize>1.5</drawSize>
 				</corpseGraphicData>
 			</li>
 			<li>
 				<bodyGraphicData>
-					<texPath>Things/Pawn/Animal/ESCP_Troll/ToxiTroll</texPath>
+					<texPath>Things/Pawn/Animal/ESCP_Troll/Toxitroll</texPath>
 					<drawSize>2.2</drawSize>
 					<shadowData>
 						<volume>(0.4, 0.4, 0.4)</volume>
@@ -71,7 +71,7 @@
 					<drawSize>2.2</drawSize>
 				</dessicatedBodyGraphicData>
 				<corpseGraphicData>
-				  <texPath>Things/Pawn/Animal/ESCP_Troll/ToxiTroll_Corpse</texPath>
+				  <texPath>Things/Pawn/Animal/ESCP_Troll/Toxitroll_Corpse</texPath>
 				  <drawSize>2.2</drawSize>
 				</corpseGraphicData>
 			</li>
