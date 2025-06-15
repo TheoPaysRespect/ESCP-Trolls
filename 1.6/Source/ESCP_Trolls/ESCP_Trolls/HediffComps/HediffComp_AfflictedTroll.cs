@@ -7,13 +7,7 @@ namespace ESCP_Trolls
     public class HediffComp_AfflictedTroll : HediffComp
 	{
 
-		public HediffCompProperties_AfflictedTroll Props
-		{
-			get
-			{
-				return (HediffCompProperties_AfflictedTroll)this.props;
-			}
-		}
+		public HediffCompProperties_AfflictedTroll Props => (HediffCompProperties_AfflictedTroll)props;
 
 		public Site site;
 

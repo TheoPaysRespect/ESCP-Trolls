@@ -72,6 +72,7 @@
 							<li>ESCP_TrollTophySmall_River</li>
 							<li>ESCP_TrollTophySmall_Swamp</li>
 							<li MayRequire="Ludeon.RimWorld.Biotech">ESCP_TrollTophySmall_Toxi</li>
+							<li MayRequire="Ludeon.RimWorld.Biotech">ESCP_TrollTophySmall_Haemo</li>
 							<li>ESCP_TrollTophySmall_Udyrfrykte</li>
 							<li>ESCP_TrollDioramaGrand_Grahl</li>
 						</defs>

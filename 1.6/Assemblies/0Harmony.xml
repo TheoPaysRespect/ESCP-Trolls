@@ -762,21 +762,17 @@
         </member>
         <member name="T:HarmonyLib.ExceptionBlock">
             <summary>An exception block</summary>
-            <remarks>Creates an exception block</remarks>
-            <param name="blockType">The <see cref="T:HarmonyLib.ExceptionBlockType" /></param>
-            <param name="catchType">The catch type</param>
-        </member>
-        <member name="M:HarmonyLib.ExceptionBlock.#ctor(HarmonyLib.ExceptionBlockType,System.Type)">
-            <summary>An exception block</summary>
-            <remarks>Creates an exception block</remarks>
-            <param name="blockType">The <see cref="T:HarmonyLib.ExceptionBlockType" /></param>
-            <param name="catchType">The catch type</param>
         </member>
         <member name="F:HarmonyLib.ExceptionBlock.blockType">
             <summary>Block type</summary>
         </member>
         <member name="F:HarmonyLib.ExceptionBlock.catchType">
             <summary>Catch type</summary>
+        </member>
+        <member name="M:HarmonyLib.ExceptionBlock.#ctor(HarmonyLib.ExceptionBlockType,System.Type)">
+            <summary>Creates a new PatchProcessor.</summary>
+            <param name="blockType">The <see cref="T:HarmonyLib.ExceptionBlockType" /></param>
+            <param name="catchType">The catch type</param>
         </member>
         <member name="T:HarmonyLib.Harmony">
             <summary>The Harmony instance is the main entry to Harmony. After creating one with an unique identifier, it is used to patch and query the current application domain</summary>
@@ -825,7 +821,7 @@
             <param name="assembly">The assembly</param>
         </member>
         <member name="M:HarmonyLib.Harmony.PatchCategory(System.String)">
-            <summary>Searches an assembly for Harmony annotations with a specific category and uses them to create patches</summary>
+            <summary>Searches the current assembly for Harmony annotations with a specific category and uses them to create patches</summary>
             <param name="category">Name of patch category</param>
         </member>
         <member name="M:HarmonyLib.Harmony.PatchCategory(System.Reflection.Assembly,System.String)">
@@ -865,6 +861,15 @@
             <param name="original">The original method/constructor</param>
             <param name="patch">The patch method as method to remove</param>
         </member>
+        <member name="M:HarmonyLib.Harmony.UnpatchCategory(System.String)">
+            <summary>Searches the current assembly for types with a specific category annotation and uses them to unpatch existing patches. Fully unpatching is not supported. Be careful, unpatching is global</summary>
+            <param name="category">Name of patch category</param>
+        </member>
+        <member name="M:HarmonyLib.Harmony.UnpatchCategory(System.Reflection.Assembly,System.String)">
+            <summary>Searches an assembly for types with a specific category annotation and uses them to unpatch existing patches. Fully unpatching is not supported. Be careful, unpatching is global</summary>
+            <param name="assembly">The assembly</param>
+            <param name="category">Name of patch category</param>
+        </member>
         <member name="M:HarmonyLib.Harmony.HasAnyPatches(System.String)">
             <summary>Test for patches from a specific Harmony ID</summary>
             <param name="harmonyID">The Harmony ID</param>
@@ -885,7 +890,7 @@
         </member>
         <member name="M:HarmonyLib.Harmony.GetOriginalMethod(System.Reflection.MethodInfo)">
             <summary>Gets the original method from a given replacement method</summary>
-            <param name="replacement">A replacement method, for example from a stacktrace</param>
+            <param name="replacement">A replacement method (patched original method)</param>
             <returns>The original method/constructor or <c>null</c> if not found</returns>
         </member>
         <member name="M:HarmonyLib.Harmony.GetMethodFromStackframe(System.Diagnostics.StackFrame)">
@@ -1286,6 +1291,9 @@
             <summary>Applies the patches</summary>
             <returns>A list of all created replacement methods or null if patch class is not annotated</returns>
         </member>
+        <member name="M:HarmonyLib.PatchClassProcessor.Unpatch">
+            <summary>REmoves the patches</summary>
+        </member>
         <member name="T:HarmonyLib.Patches">
             <summary>A group of patches</summary>
         </member>
@@ -1314,13 +1322,9 @@
         </member>
         <member name="T:HarmonyLib.PatchProcessor">
             <summary>A PatchProcessor handles patches on a method/constructor</summary>
-            <remarks>Creates an empty patch processor</remarks>
-            <param name="instance">The Harmony instance</param>
-            <param name="original">The original method/constructor</param>
         </member>
         <member name="M:HarmonyLib.PatchProcessor.#ctor(HarmonyLib.Harmony,System.Reflection.MethodBase)">
-            <summary>A PatchProcessor handles patches on a method/constructor</summary>
-            <remarks>Creates an empty patch processor</remarks>
+            <summary>Creates a new PatchProcessor.</summary>
             <param name="instance">The Harmony instance</param>
             <param name="original">The original method/constructor</param>
         </member>
@@ -1477,14 +1481,9 @@
         </member>
         <member name="T:HarmonyLib.ReversePatcher">
             <summary>A reverse patcher</summary>
-            <remarks>Creates a reverse patcher</remarks>
-            <param name="instance">The Harmony instance</param>
-            <param name="original">The original method/constructor</param>
-            <param name="standin">Your stand-in stub method as <see cref="T:HarmonyLib.HarmonyMethod" /></param>
         </member>
         <member name="M:HarmonyLib.ReversePatcher.#ctor(HarmonyLib.Harmony,System.Reflection.MethodBase,HarmonyLib.HarmonyMethod)">
-            <summary>A reverse patcher</summary>
-            <remarks>Creates a reverse patcher</remarks>
+            <summary>Creates a reverse patcher</summary>
             <param name="instance">The Harmony instance</param>
             <param name="original">The original method/constructor</param>
             <param name="standin">Your stand-in stub method as <see cref="T:HarmonyLib.HarmonyMethod" /></param>
@@ -1535,6 +1534,15 @@
             <param name="name">The name</param>
             <returns>A type or null if not found</returns>
         </member>
+        <member name="M:HarmonyLib.AccessTools.TypeSearch(System.Text.RegularExpressions.Regex,System.Boolean)">
+            <summary>Searches a type by regular expression. For exact searching, use <see cref="M:HarmonyLib.AccessTools.TypeByName(System.String)" />.</summary>
+            <param name="search">The regular expression that matches against Type.FullName or Type.Name</param>
+            <param name="invalidateCache">Refetches the cached types if set to true</param>
+            <returns>The first type where FullName or Name matches the search</returns>
+        </member>
+        <member name="M:HarmonyLib.AccessTools.ClearTypeSearchCache">
+            <summary>Clears the type cache that <see cref="M:HarmonyLib.AccessTools.TypeSearch(System.Text.RegularExpressions.Regex,System.Boolean)" /> uses.</summary>
+        </member>
         <member name="M:HarmonyLib.AccessTools.GetTypesFromAssembly(System.Reflection.Assembly)">
             <summary>Gets all successfully loaded types from a given assembly</summary>
             <param name="assembly">The assembly</param>
@@ -1572,6 +1580,11 @@
             <param name="type">The class/type to start with</param>
             <param name="func">The evaluation function returning T</param>
             <returns>The first non-<c>null</c> result, or <c>null</c> if no match</returns>
+        </member>
+        <member name="M:HarmonyLib.AccessTools.Identifiable(System.Reflection.MethodInfo)">
+            <summary>Creates an identifiable version of a method</summary>
+            <param name="method">The method</param>
+            <returns />
         </member>
         <member name="M:HarmonyLib.AccessTools.DeclaredField(System.Type,System.String)">
             <summary>Gets the reflection information for a directly declared field</summary>
@@ -2182,7 +2195,7 @@
             <param name="fieldInfo">The field</param>
             <returns>A readable/assignable <see cref="T:HarmonyLib.AccessTools.FieldRef`1" /> delegate</returns>
         </member>
-        <member name="M:HarmonyLib.AccessTools.MethodDelegate``1(System.Reflection.MethodInfo,System.Object,System.Boolean)">
+        <member name="M:HarmonyLib.AccessTools.MethodDelegate``1(System.Reflection.MethodInfo,System.Object,System.Boolean,System.Type[])">
             <summary>Creates a delegate to a given method</summary>
             <typeparam name="DelegateType">The delegate Type</typeparam>
             <param name="method">The method to create a delegate from.</param>
@@ -2197,7 +2210,14 @@
              else, invocation of the delegate calls the exact specified <paramref name="method" /> (this is useful for calling base class methods)
              Note: if <c>false</c> and <paramref name="method" /> is an interface method, an ArgumentException is thrown.
              </param>
-            <returns>A delegate of given <typeparamref name="DelegateType" /> to given <paramref name="method" /></returns>
+            <param name="delegateArgs">
+             Only applies for instance methods, and if argument <paramref name="instance" /> is null.
+             This argument only matters if the target <paramref name="method" /> signature contains a value type (such as struct or primitive types),
+             and your <typeparamref name="DelegateType" /> argument is replaced by a non-value type
+             (usually <c>object</c>) instead of using said value type.
+             Use this if the generic arguments of <typeparamref name="DelegateType" /> doesn't represent the delegate's
+             arguments, and calling this function fails
+             <returns>A delegate of given <typeparamref name="DelegateType" /> to given <paramref name="method" /></returns></param>
             <remarks>
                 <para>
              Delegate invocation is more performant and more convenient to use than <see cref="M:System.Reflection.MethodBase.Invoke(System.Object,System.Object[])" />
@@ -2209,7 +2229,7 @@
              </para>
             </remarks>
         </member>
-        <member name="M:HarmonyLib.AccessTools.MethodDelegate``1(System.String,System.Object,System.Boolean)">
+        <member name="M:HarmonyLib.AccessTools.MethodDelegate``1(System.String,System.Object,System.Boolean,System.Type[])">
             <summary>Creates a delegate to a given method</summary>
             <typeparam name="DelegateType">The delegate Type</typeparam>
             <param name="typeColonName">The method in the form <c>TypeFullName:MemberName</c>, where TypeFullName matches the form recognized by <a href="https://docs.microsoft.com/en-us/dotnet/api/system.type.gettype">Type.GetType</a> like <c>Some.Namespace.Type</c>.</param>
@@ -2224,7 +2244,14 @@
              else, invocation of the delegate calls the exact specified <paramref name="typeColonName" /> (this is useful for calling base class methods)
              Note: if <c>false</c> and <paramref name="typeColonName" /> is an interface method, an ArgumentException is thrown.
              </param>
-            <returns>A delegate of given <typeparamref name="DelegateType" /> to given <paramref name="typeColonName" /></returns>
+            <param name="delegateArgs">
+             Only applies for instance methods, and if argument <paramref name="instance" /> is null.
+             This argument only matters if the target <paramref name="typeColonName" /> signature contains a value type (such as struct or primitive types),
+             and your <typeparamref name="DelegateType" /> argument is replaced by a non-value type
+             (usually <c>object</c>) instead of using said value type.
+             Use this if the generic arguments of <typeparamref name="DelegateType" /> doesn't represent the delegate's
+             arguments, and calling this function fails
+             <returns>A delegate of given <typeparamref name="DelegateType" /> to given <paramref name="typeColonName" /></returns></param>
             <remarks>
                 <para>
              Delegate invocation is more performant and more convenient to use than <see cref="M:System.Reflection.MethodBase.Invoke(System.Object,System.Object[])" />
@@ -2247,7 +2274,7 @@
             <returns>A delegate of given <typeparamref name="DelegateType" /> to the method specified via [<see cref="T:HarmonyLib.HarmonyDelegate" />]
              attributes on <typeparamref name="DelegateType" /></returns>
             <remarks>
-             This calls <see cref="M:HarmonyLib.AccessTools.MethodDelegate``1(System.Reflection.MethodInfo,System.Object,System.Boolean)" /> with the <c>method</c> and <c>virtualCall</c> arguments
+             This calls <see cref="M:HarmonyLib.AccessTools.MethodDelegate``1(System.Reflection.MethodInfo,System.Object,System.Boolean,System.Type[])" /> with the <c>method</c> and <c>virtualCall</c> arguments
              determined from the [<see cref="T:HarmonyLib.HarmonyDelegate" />] attributes on <typeparamref name="DelegateType" />,
              and the given <paramref name="instance" /> (for closed instance delegates).
              </remarks>
@@ -3063,35 +3090,67 @@
             <returns>The same code matcher</returns>
         </member>
         <member name="M:HarmonyLib.CodeMatcher.Insert(HarmonyLib.CodeInstruction[])">
-            <summary>Inserts some instructions</summary>
+            <summary>Inserts some instructions at the current position</summary>
             <param name="instructions">The instructions</param>
             <returns>The same code matcher</returns>
         </member>
         <member name="M:HarmonyLib.CodeMatcher.Insert(System.Collections.Generic.IEnumerable{HarmonyLib.CodeInstruction})">
-            <summary>Inserts an enumeration of instructions</summary>
+            <summary>Inserts an enumeration of instructions at the current position</summary>
             <param name="instructions">The instructions</param>
             <returns>The same code matcher</returns>
         </member>
         <member name="M:HarmonyLib.CodeMatcher.InsertBranch(System.Reflection.Emit.OpCode,System.Int32)">
-            <summary>Inserts a branch</summary>
+            <summary>Inserts a branch at the current position</summary>
             <param name="opcode">The branch opcode</param>
             <param name="destination">Branch destination</param>
             <returns>The same code matcher</returns>
         </member>
         <member name="M:HarmonyLib.CodeMatcher.InsertAndAdvance(HarmonyLib.CodeInstruction[])">
-            <summary>Inserts some instructions and advances the position</summary>
+            <summary>Inserts some instructions at the current position and advances it</summary>
             <param name="instructions">The instructions</param>
             <returns>The same code matcher</returns>
         </member>
         <member name="M:HarmonyLib.CodeMatcher.InsertAndAdvance(System.Collections.Generic.IEnumerable{HarmonyLib.CodeInstruction})">
-            <summary>Inserts an enumeration of instructions and advances the position</summary>
+            <summary>Inserts an enumeration of instructions at the current position and advances it</summary>
             <param name="instructions">The instructions</param>
             <returns>The same code matcher</returns>
         </member>
         <member name="M:HarmonyLib.CodeMatcher.InsertBranchAndAdvance(System.Reflection.Emit.OpCode,System.Int32)">
-            <summary>Inserts a branch and advances the position</summary>
+            <summary>Inserts a branch at the current position and advances it</summary>
             <param name="opcode">The branch opcode</param>
             <param name="destination">Branch destination</param>
+            <returns>The same code matcher</returns>
+        </member>
+        <member name="M:HarmonyLib.CodeMatcher.InsertAfter(HarmonyLib.CodeInstruction[])">
+            <summary>Inserts instructions immediately after the current position</summary>
+            <param name="instructions">The instructions</param>
+            <returns>The same code matcher</returns>
+        </member>
+        <member name="M:HarmonyLib.CodeMatcher.InsertAfter(System.Collections.Generic.IEnumerable{HarmonyLib.CodeInstruction})">
+            <summary>Inserts an enumeration of instructions immediately after the current position</summary>
+            <param name="instructions">The instructions</param>
+            <returns>The same code matcher</returns>
+        </member>
+        <member name="M:HarmonyLib.CodeMatcher.InsertBranchAfter(System.Reflection.Emit.OpCode,System.Int32)">
+            <summary>Inserts a branch instruction immediately after the current position</summary>
+            <param name="opcode">The branch opcode</param>
+            <param name="destination">Branch destination index</param>
+            <returns>The same code matcher</returns>
+        </member>
+        <member name="M:HarmonyLib.CodeMatcher.InsertAfterAndAdvance(HarmonyLib.CodeInstruction[])">
+            <summary>Inserts instructions immediately after the current position and advances to the last inserted instruction</summary>
+            <param name="instructions">The instructions</param>
+            <returns>The same code matcher</returns>
+        </member>
+        <member name="M:HarmonyLib.CodeMatcher.InsertAfterAndAdvance(System.Collections.Generic.IEnumerable{HarmonyLib.CodeInstruction})">
+            <summary>Inserts an enumeration of instructions immediately after the current position and advances to the last inserted instruction</summary>
+            <param name="instructions">The instructions</param>
+            <returns>The same code matcher</returns>
+        </member>
+        <member name="M:HarmonyLib.CodeMatcher.InsertBranchAfterAndAdvance(System.Reflection.Emit.OpCode,System.Int32)">
+            <summary>Inserts a branch instruction immediately after the current position and advances the position</summary>
+            <param name="opcode">The branch opcode</param>
+            <param name="destination">Branch destination index</param>
             <returns>The same code matcher</returns>
         </member>
         <member name="M:HarmonyLib.CodeMatcher.RemoveInstruction">
@@ -3143,8 +3202,18 @@
             <param name="matches">Some code matches</param>
             <returns>The same code matcher</returns>
         </member>
+        <member name="M:HarmonyLib.CodeMatcher.PrepareMatchStartForward(HarmonyLib.CodeMatch[])">
+            <summary>Prepares matching forward and advancing position to beginning of matching sequence</summary>
+            <param name="matches">Some code matches</param>
+            <returns>The same code matcher</returns>
+        </member>
         <member name="M:HarmonyLib.CodeMatcher.MatchEndForward(HarmonyLib.CodeMatch[])">
             <summary>Matches forward and advances position to ending of matching sequence</summary>
+            <param name="matches">Some code matches</param>
+            <returns>The same code matcher</returns>
+        </member>
+        <member name="M:HarmonyLib.CodeMatcher.PrepareMatchEndForward(HarmonyLib.CodeMatch[])">
+            <summary>Prepares matching forward and advancing position to ending of matching sequence</summary>
             <param name="matches">Some code matches</param>
             <returns>The same code matcher</returns>
         </member>
@@ -3153,8 +3222,18 @@
             <param name="matches">Some code matches</param>
             <returns>The same code matcher</returns>
         </member>
+        <member name="M:HarmonyLib.CodeMatcher.PrepareMatchStartBackwards(HarmonyLib.CodeMatch[])">
+            <summary>Prepares matching backwards and reversing position to beginning of matching sequence</summary>
+            <param name="matches">Some code matches</param>
+            <returns>The same code matcher</returns>
+        </member>
         <member name="M:HarmonyLib.CodeMatcher.MatchEndBackwards(HarmonyLib.CodeMatch[])">
             <summary>Matches backwards and reverses position to ending of matching sequence</summary>
+            <param name="matches">Some code matches</param>
+            <returns>The same code matcher</returns>
+        </member>
+        <member name="M:HarmonyLib.CodeMatcher.PrepareMatchEndBackwards(HarmonyLib.CodeMatch[])">
+            <summary>Prepares matching backwards and reversing position to ending of matching sequence</summary>
             <param name="matches">Some code matches</param>
             <returns>The same code matcher</returns>
         </member>
@@ -3624,6 +3703,18 @@
         <member name="M:HarmonyLib.Traverse.GetValueType">
             <summary>Gets the type of the current field or property</summary>
             <returns>The type</returns>
+        </member>
+        <member name="P:HarmonyLib.Traverse.IsField">
+            <summary>Checks if the current traverse instance is for a field</summary>
+            <returns>True if its a field</returns>
+        </member>
+        <member name="P:HarmonyLib.Traverse.IsProperty">
+            <summary>Checks if the current traverse instance is for a property</summary>
+            <returns>True if its a property</returns>
+        </member>
+        <member name="P:HarmonyLib.Traverse.IsWriteable">
+            <summary>Checks if the current field or property is writeable</summary>
+            <returns>True if writing is possible</returns>
         </member>
         <member name="M:HarmonyLib.Traverse.Type(System.String)">
             <summary>Moves the current traverse instance to a inner type</summary>

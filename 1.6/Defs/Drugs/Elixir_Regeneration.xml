@@ -62,9 +62,9 @@
 			</li>
 		</comps>
 	</HediffDef>
-	<!-- ==========[ESCP_ElixirRegeneration]==========-->
+	<!-- ==========[ESCP_ElixirTrollsblood]==========-->
 	<ThingDef ParentName="ESCP_TrollElixirBase">
-		<defName>ESCP_ElixirRegeneration</defName>
+		<defName>ESCP_ElixirTrollsblood</defName>
 		<label>elixir of trollsblood</label>
 		<description>A regenerative elixir prepared using troll blood. Instantly tends bleeding wounds upon consumption. The number of wounds tended and the quality of the tend depends on the quality of the elixir, with the elixir tending one wound per quality level at a tend quality of 20% per quality level.</description>
 		<graphicData>
@@ -79,9 +79,9 @@
 			</outcomeDoers>
 		</ingestible>
 	</ThingDef>
-	<!-- ==========[ESCP_ElixirRegenerationDelayed]==========-->
+	<!-- ==========[ESCP_ElixirTrollsbloodDelayed]==========-->
 	<ThingDef ParentName="ESCP_TrollElixirBase">
-		<defName>ESCP_ElixirRegenerationDelayed</defName>
+		<defName>ESCP_ElixirTrollsbloodDelayed</defName>
 		<label>elixir of lingering trollsblood</label>
 		<description>A regenerative elixir prepared using troll blood. Heals bleeding wounds over time. The duration of the effect depends on the quality of the elixir, with the elixir lasting one hour per quality level. The effect can be stacked for up to 24 hours. The effect is nullified whilst the ingester is on fire.</description>
 		<graphicData>
@@ -92,14 +92,14 @@
 		<ingestible>
 			<outcomeDoers>
 				<li Class="ESCP_Trolls.IngestionOutcomeDoer_DelayedRegeneration">
-					<hediffDef>ESCP_ElixirRegenerationDelayed_High</hediffDef>
+					<hediffDef>ESCP_ElixirTrollsbloodDelayed_High</hediffDef>
 				</li>
 			</outcomeDoers>
 		</ingestible>
 	</ThingDef>
 	<!-- ==========[ESCP_ElixirRegenerationDelayed_High]==========-->
 	<HediffDef ParentName="ESCP_ElixirHighBase">
-		<defName>ESCP_ElixirRegenerationDelayed_High</defName>
+		<defName>ESCP_ElixirTrollsbloodDelayed_High</defName>
 		<label>elixir of lingering trollsblood</label>
 		<description>Heals bleeding wounds over time. The duration of the effect depends on the quality of the elixir, with the elixir lasting one hour per quality level. The effect can be stacked for up to 24 hours. The effect is nullified whilst the ingester is on fire.</description>
 		<comps>

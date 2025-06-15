@@ -11,3 +11,8 @@ J:\Modding\Github\ESCP-Trolls\1.5\Source\ESCP_Trolls\ESCP_Trolls\obj\Debug\ESCP_
 J:\Modding\Github\ESCP-Trolls\1.5\Source\ESCP_Trolls\ESCP_Trolls\obj\Debug\ESCP_Trolls.dll
 J:\Modding\Github\ESCP-Trolls\1.5\Assemblies\ESCP_Trolls.dll
 J:\Modding\Github\ESCP-Trolls\1.5\Source\ESCP_Trolls\ESCP_Trolls\obj\Debug\ESCP_Trolls.csproj.CopyComplete
+J:\Modding\Github\ESCP-Trolls\1.6\Source\ESCP_Trolls\ESCP_Trolls\obj\Debug\ESCP_Trolls.csproj.AssemblyReference.cache
+J:\Modding\Github\ESCP-Trolls\1.6\Source\ESCP_Trolls\ESCP_Trolls\obj\Debug\ESCP_Trolls.csproj.CoreCompileInputs.cache
+J:\Modding\Github\ESCP-Trolls\1.6\Source\ESCP_Trolls\ESCP_Trolls\obj\Debug\ESCP_Trolls.dll
+J:\Modding\Github\ESCP-Trolls\1.6\Assemblies\ESCP_Trolls.dll
+J:\Modding\Github\ESCP-Trolls\1.6\Source\ESCP_Trolls\ESCP_Trolls\obj\Debug\ESCP_Tro.6E53C63C.Up2Date

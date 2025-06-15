@@ -4,6 +4,7 @@ using RimWorld.Planet;
 using System.Reflection;
 using Verse;
 using System.Collections.Generic;
+using System.Linq;
 
 namespace ESCP_Trolls
 {
@@ -93,7 +94,7 @@ namespace ESCP_Trolls
                         __result = 0;
                         return;
                     }
-                    if (props.requireRiver && Find.WorldGrid[___map.Tile].Rivers == null)
+                    if (props.requireRiver && Find.WorldGrid[___map.Tile].Mutators.Where(x=>x.categories.Contains("River")) == null)
                     {
                         __result = 0;
                         return;

@@ -11,6 +11,7 @@
 			<ArmorRating_Blunt>0.06</ArmorRating_Blunt>
 			<ArmorRating_Sharp>0.08</ArmorRating_Sharp>
 			<MarketValue>500</MarketValue>
+			<Wildness>0.8</Wildness>
 		</statBases>
 		<uiIconScale>1.15</uiIconScale>
 		<race>
@@ -18,10 +19,9 @@
 			<herdAnimal>false</herdAnimal>
 			<predator>true</predator>
 			<foodType>CarnivoreAnimal, OvivoreAnimal</foodType>
-			<wildness>0.80</wildness>
 			<trainability>Intermediate</trainability>
 			<manhunterOnTameFailChance>0.15</manhunterOnTameFailChance>
-			<manhunterOnDamageChance>0.30</manhunterOnDamageChance>
+			<manhunterOnDamageChance>0.3</manhunterOnDamageChance>
 			<lifeStageAges>
 				<li>
 					<def>AnimalBaby</def>

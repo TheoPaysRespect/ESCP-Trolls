@@ -56,8 +56,6 @@
 					</li>
 					<li Class="FocusStrengthOffset_BuildingDefsWithQuality">
 						<defs>
-							<li MayRequire="SirMashedPotato.MorrowRim.Bloodmoon">MorrowRim_WerewolfTrophy</li>
-							<li MayRequire="SirMashedPotato.MorrowRim.Bloodmoon">MorrowRim_WerewolfLordTrophy</li>
 							<li>ESCP_TrollTophySmall_Anima</li>
 							<li>ESCP_TrollTophySmall_Barren</li>
 							<li>ESCP_TrollTophySmall_Boom</li>
@@ -71,7 +69,9 @@
 							<li>ESCP_TrollTophySmall_Pygmy</li>
 							<li>ESCP_TrollTophySmall_River</li>
 							<li>ESCP_TrollTophySmall_Swamp</li>
+							<li MayRequire="Ludeon.RimWorld.Biotech">ESCP_TrollTophySmall_Glowing</li>
 							<li MayRequire="Ludeon.RimWorld.Biotech">ESCP_TrollTophySmall_Toxi</li>
+							<li MayRequire="Ludeon.RimWorld.Biotech">ESCP_TrollTophySmall_Haemo</li>
 							<li>ESCP_TrollTophySmall_Udyrfrykte</li>
 							<li>ESCP_TrollDioramaGrand_Grahl</li>
 						</defs>
