@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<SitePartDef>
+		<defName>ESCP_AfflictedTrollSite</defName>
+		<label>Afflicted troll</label>
+		<description>An afflicted troll has been sighted here.</description>
+		<workerClass>ESCP_Trolls.SitePartWorker_AfflictedTroll</workerClass>
+		<siteTexture>World/WorldObjects/Sites/GenericSite</siteTexture>
+		<expandingIconTexture>World/WorldObjects/ESCP_TrollHuntSite</expandingIconTexture>
+		<handlesWorldObjectTimeoutInspectString>false</handlesWorldObjectTimeoutInspectString>
+		<tags>
+		  <li>ESCP_AfflictedTrollSite</li>
+		</tags>
+		<approachOrderString>Attack {0}</approachOrderString>
+		<approachingReportString>Attacking {0}</approachingReportString>
+		<arrivedLetter>The afflicted troll has sensed your pawns, and is defending its territory.</arrivedLetter>
+		<arrivedLetterDef>NegativeEvent</arrivedLetterDef>
+		<wantsThreatPoints>true</wantsThreatPoints>
+		<minThreatPoints>250</minThreatPoints>
+	</SitePartDef>
+
+	<GenStepDef>
+		<defName>ESCP_AfflictedTrollSite</defName>
+		<linkWithSite>ESCP_AfflictedTrollSite</linkWithSite>
+		<order>500</order>
+		<genStep Class="ESCP_Trolls.GenStep_AfflictedTroll"/>
+	</GenStepDef>
+
+</Defs>

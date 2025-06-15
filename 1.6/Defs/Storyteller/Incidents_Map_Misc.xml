@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	<IncidentDef>
+		<defName>ESCP_AnimaTrollWandersIn</defName>
+		<label>anima troll wanders in</label>
+		<category>Misc</category>
+		<targetTags>
+			<li>Map_PlayerHome</li>
+		</targetTags>
+		<workerClass>ESCP_Trolls.IncidentWorker_AnimaTrollWandersIn</workerClass>
+		<baseChance>0.1</baseChance>
+		<minRefireDays>40</minRefireDays>
+		<earliestDay>20</earliestDay>
+	</IncidentDef>
+</Defs>

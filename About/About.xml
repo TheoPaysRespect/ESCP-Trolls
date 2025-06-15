@@ -3,10 +3,10 @@
 	<name>ESCP - Trolls</name>
 	<packageId>ESCP.Trolls</packageId>
 	<author>SirMashedPotato, theo</author>
-	<modVersion>1.0.10</modVersion>
-	<modIconPath IgnoreIfNoMatchingField="True">UI/ESCp_Trolls_ModIcon</modIconPath>
+	<modVersion>1.0.11</modVersion>
 	<supportedVersions>
-    	<li>1.5</li>
+		<li>1.4</li>
+		<li>1.5</li>
 	</supportedVersions>
 	<description>A re-released version of MorrowRim Trolls. Do not upgrade to this version mid save. Or do if you want, just don't complain to me after you do.
 	
@@ -24,22 +24,21 @@
 	-Supports Vanilla Achievements Expanded.
 	
 	-Based on the 'Elder Scrolls' series by Bethesda Game Studios.
-
 	</description>
-	
+
 	<modDependencies>
-	  <li>
-        <packageId>brrainz.harmony</packageId>
-		<displayName>Harmony</displayName>
-		<steamWorkshopUrl>steam://url/CommunityFilePage/2009463077</steamWorkshopUrl>
-		<downloadUrl>https://github.com/pardeike/HarmonyRimWorld/releases/latest</downloadUrl>
-      </li>
-    </modDependencies>
+		<li>
+			<packageId>brrainz.harmony</packageId>
+			<displayName>Harmony</displayName>
+			<steamWorkshopUrl>steam://url/CommunityFilePage/2009463077</steamWorkshopUrl>
+			<downloadUrl>https://github.com/pardeike/HarmonyRimWorld/releases/latest</downloadUrl>
+		</li>
+	</modDependencies>
 	<loadAfter>
-	  <li>brrainz.harmony</li>
-      <li>Ludeon.RimWorld</li>
-      <li>Ludeon.RimWorld.Ideology</li>
-	  <li>Ludeon.RimWorld.Royalty</li>
-	  <li>Ludeon.RimWorld.Biotech</li>
-    </loadAfter>
+		<li>brrainz.harmony</li>
+		<li>Ludeon.RimWorld</li>
+		<li>Ludeon.RimWorld.Ideology</li>
+		<li>Ludeon.RimWorld.Royalty</li>
+		<li>Ludeon.RimWorld.Biotech</li>
+	</loadAfter>
 </ModMetaData>

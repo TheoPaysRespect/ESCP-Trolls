@@ -1,0 +1,76 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	<!--
+		Could seperate out into leather and pelt
+			- leather better against heat
+			- pelt better against cold
+	-->
+	<!-- ==========[ESCP_Leather_LightTroll]==========-->
+	<ThingDef ParentName="LeatherBase">
+		<defName>ESCP_Leather_LightTroll</defName>
+		<label>light troll pelt</label>
+		<description>A soft furry pelt harvested from a lesser troll. It is difficult to pierce and provides good insulation.</description>
+		<graphicData>
+			<color>(86,77,64)</color>
+		</graphicData>
+		<statBases>
+			<MarketValue>3.0</MarketValue>
+			<StuffPower_Armor_Sharp>1.02</StuffPower_Armor_Sharp>
+			<StuffPower_Insulation_Cold>14</StuffPower_Insulation_Cold>
+			<StuffPower_Insulation_Heat>14</StuffPower_Insulation_Heat>
+		</statBases>
+		<stuffProps>
+			<color>(86,77,64)</color>
+			<commonality>0.075</commonality>
+			<statFactors>
+				<Beauty>1.7</Beauty>
+			</statFactors>
+		</stuffProps>
+	</ThingDef>
+	<!-- ==========[ESCP_Leather_HeavyTroll]==========-->
+	<ThingDef ParentName="LeatherBase">
+		<defName>ESCP_Leather_HeavyTroll</defName>
+		<label>heavy troll pelt</label>
+		<description>The strong furry leather of a greater troll. Compared to light troll pelt, it is quite a bit tougher and a bit better at all kinds of temperature regulation.</description>
+		<graphicData>
+			<color>(38,37,37)</color>
+		</graphicData>
+		<statBases>
+			<MarketValue>3.2</MarketValue>
+			<StuffPower_Armor_Sharp>1.12</StuffPower_Armor_Sharp>
+			<StuffPower_Insulation_Cold>20</StuffPower_Insulation_Cold>
+			<StuffPower_Insulation_Heat>20</StuffPower_Insulation_Heat>
+		</statBases>
+		<stuffProps>
+			<color>(58,57,57)</color>
+			<commonality>0.05</commonality>
+			<statFactors>
+				<Beauty>1.8</Beauty>
+			</statFactors>
+		</stuffProps>
+	</ThingDef>
+	<!-- ==========[ESCP_Leather_Grahl]==========-->
+	<ThingDef ParentName="LeatherBase">
+		<defName>ESCP_Leather_Grahl</defName>
+		<label>grahl pelt</label>
+		<description>Thick leather covered in a long, rugged mat of fur. Harvested from a grahl. This thick skin insulates and protects very well, especially against the cold.</description>
+		<graphicData>
+			<color>(156,167,179)</color>
+		</graphicData>
+		<statBases>
+			<MarketValue>3.5</MarketValue>
+			<StuffPower_Armor_Sharp>1.24</StuffPower_Armor_Sharp>
+			<StuffPower_Insulation_Cold>30</StuffPower_Insulation_Cold>
+			<StuffPower_Insulation_Heat>14</StuffPower_Insulation_Heat>
+		</statBases>
+		<stuffProps>
+			<color>(156,167,179)</color>
+			<commonality>0.0025</commonality>
+			<statFactors>
+				<MaxHitPoints>1.5</MaxHitPoints>
+				<Beauty>1.9</Beauty>
+			</statFactors>
+		</stuffProps>
+	</ThingDef>
+	
+</Defs>

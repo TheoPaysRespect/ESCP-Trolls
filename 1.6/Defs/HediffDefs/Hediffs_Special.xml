@@ -1,0 +1,77 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	<HediffDef>
+		<defName>ESCP_AnimaTrollHealing</defName>
+		<hediffClass>Hediff_High</hediffClass>
+		<label>anima troll healing</label>
+		<description>The presence of a nearby anima troll is known to enhance ones natural healing rate, causing wounds to heal faster than normal, for a brief period of time. The effect is nullified whilst the ingester is on fire.</description>
+		<defaultLabelColor>(0.8, 0.6, 1.0)</defaultLabelColor>
+		<scenarioCanAdd>true</scenarioCanAdd>
+		<initialSeverity>1</initialSeverity>
+		<maxSeverity>1</maxSeverity>
+		<isBad>false</isBad>
+		<comps>
+			<li Class="HediffCompProperties_SeverityPerDay">
+				<severityPerDay>-10.0</severityPerDay>
+				<showHoursToRecover>true</showHoursToRecover>
+			</li>
+			<li Class="ESCP_Trolls.HediffCompProperties_Regeneration"/>
+		</comps>
+	</HediffDef>
+
+	<HediffDef>
+		<defName>ESCP_AfflictedTroll</defName>
+		<label>Nirncrux affliction</label>
+		<description>A troll empowered by a strange affliction, making it far more dangerous than others of its kind.</description>
+		<hediffClass>HediffWithComps</hediffClass>
+		<defaultLabelColor>(0.8, 0.6, 1.0)</defaultLabelColor>
+		<makesSickThought>false</makesSickThought>
+		<maxSeverity>1.0</maxSeverity>
+		<isBad>false</isBad>
+		<comps>
+		  <li Class="ESCP_Trolls.HediffCompProperties_AfflictedTroll"/>
+		  <li Class="HediffCompProperties_DisappearsOnDeath"/>
+		</comps>
+		<stages>
+			<li>
+				<painFactor>0</painFactor>
+				<capMods>
+				  <li>
+					<capacity>Sight</capacity>
+					<offset>0.50</offset>
+				  </li>
+				  <li>
+					<capacity>Moving</capacity>
+					<offset>0.50</offset>
+				  </li>
+				  <li>
+					<capacity>Manipulation</capacity>
+					<offset>0.50</offset>
+				  </li>
+				</capMods>
+				<statOffsets>
+					<InjuryHealingFactor>0.5</InjuryHealingFactor>
+					<ToxicResistance>0.5</ToxicResistance>
+					<ArmorRating_Blunt>0.25</ArmorRating_Blunt>
+					<ArmorRating_Sharp>0.25</ArmorRating_Sharp>
+				</statOffsets>
+			</li>
+		</stages>
+	</HediffDef>
+	
+	<HediffDef>
+		<defName>ESCP_AfflictedTrollBattleScar</defName>
+		<label>Battle scar</label>
+		<description>A scar obtained in battle, proof of victory.</description>
+		<hediffClass>Hediff</hediffClass>
+		<defaultLabelColor>(0.8, 0.6, 1.0)</defaultLabelColor>
+		<stages>
+			<li>
+				<statOffsets>
+					<IncomingDamageFactor>-0.02</IncomingDamageFactor>
+				</statOffsets>
+			</li>
+		</stages>
+	</HediffDef>
+	
+</Defs>

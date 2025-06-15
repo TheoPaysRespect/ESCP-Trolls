@@ -1,0 +1,92 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{999601B9-9B97-49B7-ABE5-2BC943D13604}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ESCP_Trolls</RootNamespace>
+    <AssemblyName>ESCP_Trolls</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>false</DebugSymbols>
+    <DebugType>none</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\..\..\Assemblies\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="0Harmony, Version=2.2.2.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Lib.Harmony.2.2.2\lib\net472\0Harmony.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Assembly-CSharp">
+      <HintPath>I:\Steam_Library\steamapps\common\RimWorld\RimWorldWin64_Data\Managed\Assembly-CSharp.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+    <Reference Include="UnityEngine">
+      <HintPath>I:\Steam_Library\steamapps\common\RimWorld\RimWorldWin64_Data\Managed\UnityEngine.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEngine.CoreModule">
+      <HintPath>I:\Steam_Library\steamapps\common\RimWorld\RimWorldWin64_Data\Managed\UnityEngine.CoreModule.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEngine.TextRenderingModule">
+      <HintPath>I:\Steam_Library\steamapps\common\RimWorld\RimWorldWin64_Data\Managed\UnityEngine.TextRenderingModule.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="DefModExtensions\BiomeFeatureRequirements.cs" />
+    <Compile Include="DefModExtensions\RaceProperties.cs" />
+    <Compile Include="DefOf\HediffDefOf.cs" />
+    <Compile Include="DefOf\PawnKindDefOf.cs" />
+    <Compile Include="Harmony\HarmonyPatches.cs" />
+    <Compile Include="HediffComps\HediffComp_AfflictedTroll.cs" />
+    <Compile Include="HediffComps\Properties\HediffCompProperties_AfflictedTroll.cs" />
+    <Compile Include="HediffComps\Properties\HediffCompProperties_Regeneration.cs" />
+    <Compile Include="HediffComps\HediffComp_Regeneration.cs" />
+    <Compile Include="IncidentWorkers\IncidentWorker_AnimaTrollWandersIn.cs" />
+    <Compile Include="IncidentWorkers\IncidentWorker_TrollWandersIn.cs" />
+    <Compile Include="IngestionOutcomeDoers\IngestionOutcomeDoer_DelayedRegeneration.cs" />
+    <Compile Include="IngestionOutcomeDoers\IngestionOutcomeDoer_Regeneration.cs" />
+    <Compile Include="Quests\GenStep\GenStep_AfflictedTroll.cs" />
+    <Compile Include="Quests\SitePartWorker\SitePartWorker_AfflictedTroll.cs" />
+    <Compile Include="Utility_OnStartup.cs" />
+    <Compile Include="ModSettings\Trolls_Mod.cs" />
+    <Compile Include="ModSettings\Trolls_ModSettings.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ThingComps\CompProperties_Regeneration.cs" />
+    <Compile Include="ThingComps\Comp_Regeneration.cs" />
+    <Compile Include="Utility.cs" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
