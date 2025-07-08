@@ -272,6 +272,9 @@
 				<BorealForest>0.04</BorealForest>
 				<Tundra>0.04</Tundra>
 				<AridShrubland>0.04</AridShrubland>
+				<!--Biomes-->
+				<BMT_FungalForest MayRequire="BiomesTeam.BiomesCaverns">0.05</BMT_FungalForest>
+				<BMT_CrystalCaverns MayRequire="BiomesTeam.BiomesCaverns">0.05</BMT_CrystalCaverns>
 				<!-- Regrowth Aspen -->
 				<RG_AspenForest MayRequire="ReGrowth.BOTR.AspenForest">0.05</RG_AspenForest>
 				<!-- More Vanilla Biomes -->

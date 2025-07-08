@@ -335,6 +335,7 @@
 				<!-- Biomes! -->
 				<BiomesIslands_TropicalIsland MayRequire="BiomesTeam.BiomesIslands">0.05</BiomesIslands_TropicalIsland>
 				<BiomesIslands_TropicalArchipelago MayRequire="BiomesTeam.BiomesIslands">0.05</BiomesIslands_TropicalArchipelago>
+				<BMT_FungalForest MayRequire="BiomesTeam.BiomesCaverns">0.05</BMT_FungalForest>
 				<!-- More Vanilla Biomes -->
 				<ZBiome_Marsh MayRequire="zylle.MoreVanillaBiomes">0.05</ZBiome_Marsh>
 				<ZBiome_CloudForest MayRequire="zylle.MoreVanillaBiomes">0.05</ZBiome_CloudForest>

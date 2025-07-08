@@ -345,6 +345,8 @@
 				<BiomesIslands_BorealArchipelago MayRequire="BiomesTeam.BiomesIslands">0.01</BiomesIslands_BorealArchipelago>
 				<BiomesIslands_TundraIsland MayRequire="BiomesTeam.BiomesIslands">0.01</BiomesIslands_TundraIsland>
 				<BiomesIslands_TundraArchipelago MayRequire="BiomesTeam.BiomesIslands">0.01</BiomesIslands_TundraArchipelago>
+				<BMT_FungalForest MayRequire="BiomesTeam.BiomesCaverns">0.01</BMT_FungalForest>
+				<BMT_CrystalCaverns MayRequire="BiomesTeam.BiomesCaverns">0.01</BMT_CrystalCaverns>
 				<!-- Regrowth -->
 				<RG_AspenForest MayRequire="ReGrowth.BOTR.AspenForest">0.02</RG_AspenForest>
 				<!-- More Vanilla Biomes -->

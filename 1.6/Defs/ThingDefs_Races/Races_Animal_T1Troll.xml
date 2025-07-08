@@ -28,6 +28,7 @@
 				<BMT_ChromaticOasis MayRequire="BiomesTeam.Oasis">0.07</BMT_ChromaticOasis>
 				<BiomesIslands_DesertIsland MayRequire="BiomesTeam.BiomesIslands">0.05</BiomesIslands_DesertIsland>
 				<BiomesIslands_DesertArchipelago MayRequire="BiomesTeam.BiomesIslands">0.05</BiomesIslands_DesertArchipelago>
+				<BMT_FungalForest MayRequire="BiomesTeam.BiomesCaverns">0.05</BMT_FungalForest>
 				<!-- More Vanilla Biomes -->
 				<ZBiome_DesertOasis MayRequire="zylle.MoreVanillaBiomes">0.07</ZBiome_DesertOasis>
 				<ZBiome_Badlands MayRequire="zylle.MoreVanillaBiomes">0.05</ZBiome_Badlands>
